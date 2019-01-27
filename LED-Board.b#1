@@ -171,6 +171,12 @@
 <text x="56.394" y="52.1452" size="1.016" layer="25">GND</text>
 <text x="40.392" y="52.0944" size="1.016" layer="25">BUS</text>
 <text x="28.0476" y="52.196" size="1.016" layer="25">VCC</text>
+<polygon width="0.4064" layer="30">
+<vertex x="-1.786" y="73.358"/>
+<vertex x="80.129" y="73.358"/>
+<vertex x="80.129" y="30.305"/>
+<vertex x="-1.786" y="30.305"/>
+</polygon>
 <text x="47.266" y="53.21" size="0.6096" layer="21" font="vector">Sense</text>
 <wire x1="7" y1="69" x2="72" y2="69" width="0" layer="20"/>
 <wire x1="72" y1="69" x2="75" y2="66" width="0" layer="20" curve="-90"/>

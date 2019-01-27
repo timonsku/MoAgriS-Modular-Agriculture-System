@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -147,8 +147,8 @@
 </layers>
 <board>
 <plain>
-<hole x="10" y="78.7" drill="3"/>
-<hole x="60" y="78.7" drill="3"/>
+<hole x="9" y="79.7" drill="2"/>
+<hole x="61" y="79.7" drill="2"/>
 <wire x1="60.5" y1="52.89" x2="64" y2="56.4" width="0" layer="20" curve="90"/>
 <wire x1="64" y1="58.05" x2="64" y2="79.454" width="0" layer="20"/>
 <wire x1="64" y1="79.454" x2="61.008" y2="82.7" width="0" layer="20" curve="90"/>
@@ -157,9 +157,12 @@
 <wire x1="6" y1="79.2" x2="6" y2="56.39" width="0" layer="20"/>
 <wire x1="6" y1="56.39" x2="9.5" y2="52.89" width="0" layer="20" curve="90"/>
 <wire x1="9.5" y1="52.89" x2="60.5" y2="52.89" width="0" layer="20"/>
+<text x="12.088" y="59.418" size="0.6096" layer="25">LED-</text>
+<text x="51.648" y="59.164" size="0.6096" layer="25">LED+</text>
 <text x="55.669" y="70.367" size="1.016" layer="25">GND</text>
 <text x="32.367" y="70.54" size="1.016" layer="25">BUS</text>
 <text x="13.679" y="70.49" size="1.016" layer="25">VCC</text>
+<text x="21.068" y="51.534" size="1.27" layer="21" font="vector">+</text>
 <dimension x1="21.498" y1="79.95" x2="21.6" y2="70" x3="24.5517625" y3="75.005778125" textsize="1.778" layer="47"/>
 <dimension x1="21.498" y1="61.344" x2="21.4" y2="71.4" x3="11.736278125" y3="66.27734375" textsize="1.778" layer="47"/>
 <polygon width="0.1524" layer="29">
@@ -178,9 +181,6 @@
 <wire x1="64" y1="58.05" x2="35" y2="58.05" width="0.001" layer="20"/>
 <wire x1="35" y1="58.05" x2="35" y2="56.4" width="0.001" layer="20"/>
 <wire x1="35" y1="56.4" x2="64" y2="56.4" width="0.001" layer="20"/>
-<text x="16.721" y="70.49" size="1.016" layer="26" rot="MR0">VCC</text>
-<text x="35.033" y="70.54" size="1.016" layer="26" rot="MR0">BUS</text>
-<text x="58.731" y="70.367" size="1.016" layer="26" rot="MR0">GND</text>
 </plain>
 <libraries>
 <library name="timon-diverses">
@@ -405,12 +405,6 @@
 <contactref element="GND-CLIP1" pad="CLIP-INPUT1"/>
 <contactref element="GND-CLIP2" pad="CLIP-INPUT2"/>
 <contactref element="GND-CLIP2" pad="CLIP-INPUT1"/>
-<polygon width="0.7" layer="16" thermals="no">
-<vertex x="40.8" y="86"/>
-<vertex x="71" y="86"/>
-<vertex x="71" y="48"/>
-<vertex x="40.8" y="48"/>
-</polygon>
 </signal>
 <signal name="PWM">
 <contactref element="PWM-CLIP" pad="CLIP-INPUT1"/>
@@ -427,12 +421,6 @@
 <contactref element="PWM-CLIP2" pad="CLIP-INPUT1"/>
 <contactref element="PWM-CLIP3" pad="CLIP-INPUT2"/>
 <contactref element="PWM-CLIP3" pad="CLIP-INPUT1"/>
-<polygon width="0.4" layer="16" thermals="no">
-<vertex x="28.8" y="84"/>
-<vertex x="39.2" y="84"/>
-<vertex x="39.2" y="47"/>
-<vertex x="28.8" y="47"/>
-</polygon>
 </signal>
 <signal name="VCC-RAW" class="1">
 <contactref element="VCC-CLIP" pad="CLIP-INPUT1"/>
@@ -451,12 +439,6 @@
 <contactref element="VCC-CLIP1" pad="CLIP-INPUT1"/>
 <contactref element="VCC-CLIP2" pad="CLIP-INPUT2"/>
 <contactref element="VCC-CLIP2" pad="CLIP-INPUT1"/>
-<polygon width="0.4" layer="16" thermals="no">
-<vertex x="3" y="85"/>
-<vertex x="27.4" y="85"/>
-<vertex x="27.4" y="47"/>
-<vertex x="3" y="47"/>
-</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>

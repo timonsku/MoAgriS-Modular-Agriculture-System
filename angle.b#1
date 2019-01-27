@@ -178,9 +178,6 @@
 <wire x1="64" y1="58.05" x2="35" y2="58.05" width="0.001" layer="20"/>
 <wire x1="35" y1="58.05" x2="35" y2="56.4" width="0.001" layer="20"/>
 <wire x1="35" y1="56.4" x2="64" y2="56.4" width="0.001" layer="20"/>
-<text x="16.721" y="70.49" size="1.016" layer="26" rot="MR0">VCC</text>
-<text x="35.033" y="70.54" size="1.016" layer="26" rot="MR0">BUS</text>
-<text x="58.731" y="70.367" size="1.016" layer="26" rot="MR0">GND</text>
 </plain>
 <libraries>
 <library name="timon-diverses">

@@ -1,0 +1,14 @@
+Qty,Device,Package,Parts,Description,LCSC Part Number,Octopart
+3,DIODE SMA,B230A-13-F,"D1, D2, D3",Diode,C12889,
+1,SWPA6045S680MT,6045,INDUCTOR,SMT Power Inductor,C53663,
+1,PT4115,SOT-89-5,IC4,"30V, 1.2A Step-down Constant Current Driver",C15425,
+1,0.33 Resistor,1206,R2,Current Sense Resistor 0.33 Ohm 1%,C323760,
+2,Power Filter Cap,PANASONIC_C (or D=6.3mm),C1,Aluminum Electrolytic Capacitor 47uF,C141425,
+1,2k Resistor,1206,R1,Resistor 2k,C17944,
+3,Fuseholder,FUSE-HOLDER-5X20MM,"GND-CLIP, BUS-CLIP, VCC-CLIP",Schurter 0751.0052 or 0751.0062,,https://octopart.com/0751.0052-schurter-13687?r=sp&s=ZJpI6RL2SQuiR3NmCokcWw / https://octopart.com/0751.0062-schurter-835803?r=sp&s=vivr2zzdTGO7Cyk6tBMVlw
+3,GROW LED,LUXEON,"LED-1, LED-2, LED-3",1W Indoor Grow LED,,https://www.aliexpress.com/item/High-Power-1W-3W-5W-LED-Grow-Light-45mil-Full-Spectrum-380-840Nm-COB-SMD-Diode/32798559619.html
+1,ATSAMD11C14A-SSUT,14-Pin SOIC,U1,Microcontroller,,https://octopart.com/atsamd11c14a-ssut-microchip-77761364?r=sp&s=35ShDJTfREeku6gmnBfHAg
+1,LD1117,SOT-223,U3,3.3V LDO VREG,C86781,
+2,0603 Cap 1uF,603,"1UF2, 1UF5",0603 Cap 1uF,C5673,
+1,0805 10uF Cap,805,1UF4,0805 10uF Cap,C17024,
+1,USB-B-MICRO-SMD,,J1,USB-B-MICRO-SMD,C106820,
