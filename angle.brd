@@ -157,9 +157,9 @@
 <wire x1="6" y1="79.2" x2="6" y2="56.39" width="0" layer="20"/>
 <wire x1="6" y1="56.39" x2="9.5" y2="52.89" width="0" layer="20" curve="90"/>
 <wire x1="9.5" y1="52.89" x2="60.5" y2="52.89" width="0" layer="20"/>
-<text x="55.669" y="70.367" size="1.016" layer="25">GND</text>
+<text x="13.769" y="70.467" size="1.016" layer="25">GND</text>
 <text x="32.367" y="70.54" size="1.016" layer="25">BUS</text>
-<text x="13.679" y="70.49" size="1.016" layer="25">VCC</text>
+<text x="55.579" y="70.29" size="1.016" layer="25">VCC</text>
 <dimension x1="21.498" y1="79.95" x2="21.6" y2="70" x3="24.5517625" y3="75.005778125" textsize="1.778" layer="47"/>
 <dimension x1="21.498" y1="61.344" x2="21.4" y2="71.4" x3="11.736278125" y3="66.27734375" textsize="1.778" layer="47"/>
 <polygon width="0.1524" layer="29">
@@ -402,11 +402,17 @@
 <contactref element="GND-CLIP1" pad="CLIP-INPUT1"/>
 <contactref element="GND-CLIP2" pad="CLIP-INPUT2"/>
 <contactref element="GND-CLIP2" pad="CLIP-INPUT1"/>
-<polygon width="0.01" layer="1">
+<polygon width="0.01" layer="1" thermals="no">
 <vertex x="65.4" y="84.1"/>
 <vertex x="43.6" y="84.1"/>
 <vertex x="43.6" y="51"/>
 <vertex x="65.4" y="51"/>
+</polygon>
+<polygon width="0.01" layer="16" thermals="no">
+<vertex x="66.3" y="84.6"/>
+<vertex x="66.3" y="51.6"/>
+<vertex x="43.6" y="51.6"/>
+<vertex x="43.6" y="84.6"/>
 </polygon>
 </signal>
 <signal name="PWM">
@@ -418,11 +424,17 @@
 <contactref element="PWM-CLIP2" pad="CLIP-INPUT1"/>
 <contactref element="PWM-CLIP3" pad="CLIP-INPUT2"/>
 <contactref element="PWM-CLIP3" pad="CLIP-INPUT1"/>
-<polygon width="0.01" layer="1">
+<polygon width="0.01" layer="1" thermals="no">
 <vertex x="42.5" y="83.5"/>
 <vertex x="42.5" y="51.6"/>
 <vertex x="27.5" y="51.5"/>
 <vertex x="27.5" y="83.4"/>
+</polygon>
+<polygon width="0.01" layer="16" thermals="no">
+<vertex x="27.5" y="83.5"/>
+<vertex x="27.5" y="51.6"/>
+<vertex x="42.5" y="51.5"/>
+<vertex x="42.5" y="83.4"/>
 </polygon>
 </signal>
 <signal name="VCC-RAW" class="1">
@@ -434,35 +446,17 @@
 <contactref element="VCC-CLIP1" pad="CLIP-INPUT1"/>
 <contactref element="VCC-CLIP2" pad="CLIP-INPUT2"/>
 <contactref element="VCC-CLIP2" pad="CLIP-INPUT1"/>
-<polygon width="0.01" layer="1">
+<polygon width="0.01" layer="1" thermals="no">
 <vertex x="3.7" y="84.6"/>
 <vertex x="3.7" y="51.6"/>
 <vertex x="26.4" y="51.6"/>
 <vertex x="26.4" y="84.6"/>
 </polygon>
-</signal>
-<signal name="GND1">
-<polygon width="0.01" layer="16">
+<polygon width="0.01" layer="16" thermals="no">
 <vertex x="4.6" y="84.1"/>
 <vertex x="26.4" y="84.1"/>
 <vertex x="26.4" y="51"/>
 <vertex x="4.6" y="51"/>
-</polygon>
-</signal>
-<signal name="PWM1">
-<polygon width="0.01" layer="16">
-<vertex x="27.5" y="83.5"/>
-<vertex x="27.5" y="51.6"/>
-<vertex x="42.5" y="51.5"/>
-<vertex x="42.5" y="83.4"/>
-</polygon>
-</signal>
-<signal name="VCC-RAW1" class="1">
-<polygon width="0.01" layer="16">
-<vertex x="66.3" y="84.6"/>
-<vertex x="66.3" y="51.6"/>
-<vertex x="43.6" y="51.6"/>
-<vertex x="43.6" y="84.6"/>
 </polygon>
 </signal>
 </signals>
