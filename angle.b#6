@@ -157,12 +157,9 @@
 <wire x1="6" y1="79.2" x2="6" y2="56.39" width="0" layer="20"/>
 <wire x1="6" y1="56.39" x2="9.5" y2="52.89" width="0" layer="20" curve="90"/>
 <wire x1="9.5" y1="52.89" x2="60.5" y2="52.89" width="0" layer="20"/>
-<text x="12.088" y="59.418" size="0.6096" layer="25">LED-</text>
-<text x="51.648" y="59.164" size="0.6096" layer="25">LED+</text>
-<text x="48.219" y="57.767" size="1.016" layer="25">GND</text>
-<text x="32.217" y="57.64" size="1.016" layer="25">PWM</text>
-<text x="20.279" y="57.64" size="1.016" layer="25">VCC</text>
-<text x="21.068" y="51.534" size="1.27" layer="21" font="vector">+</text>
+<text x="55.669" y="70.367" size="1.016" layer="25">GND</text>
+<text x="32.367" y="70.54" size="1.016" layer="25">BUS</text>
+<text x="13.679" y="70.49" size="1.016" layer="25">VCC</text>
 <dimension x1="21.498" y1="79.95" x2="21.6" y2="70" x3="24.5517625" y3="75.005778125" textsize="1.778" layer="47"/>
 <dimension x1="21.498" y1="61.344" x2="21.4" y2="71.4" x3="11.736278125" y3="66.27734375" textsize="1.778" layer="47"/>
 <polygon width="0.1524" layer="29">

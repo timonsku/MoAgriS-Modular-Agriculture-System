@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -302,25 +302,41 @@ high efficiency LED driver.
 Setup for 330mA per LED.</text>
 </plain>
 <instances>
-<instance part="VCC-CLIP" gate="CLIP" x="-33.02" y="-2.54"/>
-<instance part="GND-CLIP" gate="CLIP" x="-68.58" y="15.24"/>
-<instance part="GND10" gate="1" x="-58.42" y="12.7"/>
-<instance part="GND11" gate="1" x="-58.42" y="5.08"/>
-<instance part="PWM-CLIP" gate="CLIP" x="-60.96" y="-25.4"/>
-<instance part="VCC-CLIP3" gate="CLIP" x="-33.02" y="7.62"/>
-<instance part="GND-CLIP3" gate="CLIP" x="-68.58" y="-10.16"/>
-<instance part="GND6" gate="1" x="-58.42" y="-12.7"/>
-<instance part="PWM-CLIP1" gate="CLIP" x="-30.48" y="-25.4"/>
-<instance part="FRAME1" gate="G$1" x="-114.3" y="-81.28"/>
-<instance part="VCC-CLIP1" gate="CLIP" x="58.42" y="5.08"/>
-<instance part="GND-CLIP1" gate="CLIP" x="22.86" y="22.86"/>
-<instance part="GND1" gate="1" x="33.02" y="20.32"/>
-<instance part="GND2" gate="1" x="33.02" y="12.7"/>
-<instance part="PWM-CLIP2" gate="CLIP" x="30.48" y="-17.78"/>
-<instance part="VCC-CLIP2" gate="CLIP" x="58.42" y="15.24"/>
-<instance part="GND-CLIP2" gate="CLIP" x="22.86" y="-2.54"/>
-<instance part="GND3" gate="1" x="33.02" y="-5.08"/>
-<instance part="PWM-CLIP3" gate="CLIP" x="60.96" y="-17.78"/>
+<instance part="VCC-CLIP" gate="CLIP" x="-33.02" y="-2.54" smashed="yes"/>
+<instance part="GND-CLIP" gate="CLIP" x="-68.58" y="15.24" smashed="yes"/>
+<instance part="GND10" gate="1" x="-58.42" y="12.7" smashed="yes">
+<attribute name="VALUE" x="-60.96" y="10.16" size="1.778" layer="96"/>
+</instance>
+<instance part="GND11" gate="1" x="-58.42" y="5.08" smashed="yes">
+<attribute name="VALUE" x="-60.96" y="2.54" size="1.778" layer="96"/>
+</instance>
+<instance part="PWM-CLIP" gate="CLIP" x="-60.96" y="-25.4" smashed="yes"/>
+<instance part="VCC-CLIP3" gate="CLIP" x="-33.02" y="7.62" smashed="yes"/>
+<instance part="GND-CLIP3" gate="CLIP" x="-68.58" y="-10.16" smashed="yes"/>
+<instance part="GND6" gate="1" x="-58.42" y="-12.7" smashed="yes">
+<attribute name="VALUE" x="-60.96" y="-15.24" size="1.778" layer="96"/>
+</instance>
+<instance part="PWM-CLIP1" gate="CLIP" x="-30.48" y="-25.4" smashed="yes"/>
+<instance part="FRAME1" gate="G$1" x="-114.3" y="-81.28" smashed="yes">
+<attribute name="DRAWING_NAME" x="102.87" y="-66.04" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="102.87" y="-71.12" size="2.286" layer="94"/>
+<attribute name="SHEET" x="116.205" y="-76.2" size="2.54" layer="94"/>
+</instance>
+<instance part="VCC-CLIP1" gate="CLIP" x="58.42" y="5.08" smashed="yes"/>
+<instance part="GND-CLIP1" gate="CLIP" x="22.86" y="22.86" smashed="yes"/>
+<instance part="GND1" gate="1" x="33.02" y="20.32" smashed="yes">
+<attribute name="VALUE" x="30.48" y="17.78" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="33.02" y="12.7" smashed="yes">
+<attribute name="VALUE" x="30.48" y="10.16" size="1.778" layer="96"/>
+</instance>
+<instance part="PWM-CLIP2" gate="CLIP" x="30.48" y="-17.78" smashed="yes"/>
+<instance part="VCC-CLIP2" gate="CLIP" x="58.42" y="15.24" smashed="yes"/>
+<instance part="GND-CLIP2" gate="CLIP" x="22.86" y="-2.54" smashed="yes"/>
+<instance part="GND3" gate="1" x="33.02" y="-5.08" smashed="yes">
+<attribute name="VALUE" x="30.48" y="-7.62" size="1.778" layer="96"/>
+</instance>
+<instance part="PWM-CLIP3" gate="CLIP" x="60.96" y="-17.78" smashed="yes"/>
 </instances>
 <busses>
 </busses>

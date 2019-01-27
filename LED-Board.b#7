@@ -969,7 +969,7 @@ einem neuen Namen ab.</description>
 <attribute name="NAME" x="18.8166" y="64.525" size="0.8128" layer="25" ratio="18" rot="R270"/>
 <attribute name="VALUE" x="12.3396" y="64.525" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="F1" library="Adafruit" package="1812" value="" x="31.877" y="58.674" smashed="yes" rot="R180">
+<element name="F1" library="Adafruit" package="1812" value="TLC-MSMD110/24" x="31.877" y="58.674" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.7345" y="61.214" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="33.7345" y="56.769" size="0.6096" layer="27" rot="R180"/>
 </element>

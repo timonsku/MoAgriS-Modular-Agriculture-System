@@ -193,13 +193,13 @@
 <libraries>
 <library name="timon-diverses" urn="urn:adsk.eagle:library:2314815">
 <packages>
-<package name="FUSE-HOLDER-5X20MM" urn="urn:adsk.eagle:footprint:2314822/1" library_version="1">
-<pad name="CLIP-INPUT1" x="-2.65" y="0" drill="1.27" diameter="2.54"/>
-<pad name="CLIP-INPUT2" x="2.65" y="0" drill="1.27" diameter="2.54"/>
+<package name="FUSE-HOLDER-5X20MM" urn="urn:adsk.eagle:footprint:2314822/1" locally_modified="yes" library_version="2" library_locally_modified="yes">
+<pad name="CLIP-INPUT1" x="-2.65" y="0" drill="1.22" diameter="2.54"/>
+<pad name="CLIP-INPUT2" x="2.65" y="0" drill="1.22" diameter="2.54"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="FUSE-HOLDER-5X20MM" urn="urn:adsk.eagle:package:2314826/2" type="model" library_version="2">
+<package3d name="FUSE-HOLDER-5X20MM" urn="urn:adsk.eagle:package:2314826/2" locally_modified="yes" type="model" library_version="2" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="FUSE-HOLDER-5X20MM"/>
 </packageinstances>

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -160,7 +160,7 @@
 <board>
 <fusionsync huburn="a.cGVyc29uYWw6dWUyODAzZDk0" projecturn="a.cGVyc29uYWw6dWUyODAzZDk0IzIwMTgwMzE2MTIzMTg0Mjgx" f3durn="urn:adsk.wipprod:dm.lineage:DvfZjGxoRsOmgfsErQWE_A" pcbguid="6383e179-ef03-4662-8bce-4f58b75482cc" lastpulledtime="" lastsyncedchangeguid="90d3d4ca-2862-99f0-234d-071efe203a04"/>
 <plain>
-<hole x="7" y="38" drill="2.5"/>
+<hole x="7" y="38" drill="3.2"/>
 <polygon width="0.4064" layer="29">
 <vertex x="31.742" y="22.812"/>
 <vertex x="37.33" y="22.812"/>
@@ -186,9 +186,9 @@
 <wire x1="7" y1="35" x2="4" y2="38" width="0" layer="20" curve="-90"/>
 <wire x1="4" y1="38" x2="4" y2="66" width="0" layer="20"/>
 <wire x1="4" y1="66" x2="7" y2="69" width="0" layer="20" curve="-90"/>
-<hole x="7" y="66" drill="2.5"/>
-<hole x="72" y="66" drill="2.5"/>
-<hole x="72" y="38" drill="2.5"/>
+<hole x="7" y="66" drill="3.2"/>
+<hole x="72" y="66" drill="3.2"/>
+<hole x="72" y="38" drill="3.2"/>
 </plain>
 <libraries>
 <library name="timon-diverses" urn="urn:adsk.eagle:library:2314815">
