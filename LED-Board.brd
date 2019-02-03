@@ -1352,6 +1352,7 @@ einem neuen Namen ab.</description>
 <contactref element="PWM-CLIP1" pad="CLIP-INPUT2"/>
 <contactref element="PWM-CLIP1" pad="CLIP-INPUT1"/>
 <contactref element="R1" pad="1"/>
+<contactref element="LED-2" pad="S"/>
 <wire x1="35.85" y1="55" x2="38.502" y2="52.348" width="0.4826" layer="1"/>
 <wire x1="38.502" y1="52.348" x2="38.502" y2="52.346" width="0.4826" layer="1"/>
 <wire x1="38.502" y1="57.646" x2="38.502" y2="57.642" width="0.4826" layer="1"/>
@@ -1362,7 +1363,6 @@ einem neuen Namen ab.</description>
 <wire x1="41.208" y1="55.052" x2="41.208" y2="55.058" width="0.4826" layer="1"/>
 <wire x1="41.15" y1="55" x2="39.139" y2="57.011" width="0.4826" layer="1"/>
 <wire x1="39.137" y1="57.011" x2="39.139" y2="57.011" width="0.4826" layer="1"/>
-<contactref element="LED-2" pad="S"/>
 <via x="36.576" y="62.484" extent="1-16" drill="0.4"/>
 <via x="36.576" y="61.468" extent="1-16" drill="0.4"/>
 <via x="36.576" y="60.452" extent="1-16" drill="0.4"/>

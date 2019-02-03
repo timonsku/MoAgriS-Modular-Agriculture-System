@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<<<<<<< HEAD
 <eagle version="9.3.0">
-=======
-<eagle version="9.2.2">
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7333,13 +7329,8 @@ Manufacturer: Hirose&lt;br&gt;
 <part name="U$12" library="microbuilder" deviceset="GND" device=""/>
 <part name="U3" library="LDL1117S12R" deviceset="LDL1117S12R" device=""/>
 <part name="U$8" library="microbuilder" deviceset="GND" device=""/>
-<<<<<<< HEAD
 <part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
 <part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
-=======
-<part name="1UF4" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
-<part name="1UF5" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 <part name="U$9" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$10" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$13" library="microbuilder" deviceset="3.3V" device=""/>
@@ -7355,11 +7346,8 @@ Manufacturer: Hirose&lt;br&gt;
 <part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-B340A" value="3A/40V/500mV"/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
 <part name="C2" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" value="100uF"/>
-<<<<<<< HEAD
 <part name="F1" library="Adafruit" deviceset="PTCFUSE" device="-1812" value="TLC-MSMD110/24"/>
 <part name="JP1" library="Adafruit" deviceset="PINHD-1X1" device=""/>
-=======
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 </parts>
 <sheets>
 <sheet>
@@ -7370,7 +7358,6 @@ high efficiency LED driver.
 Setup for 330mA per LED.</text>
 </plain>
 <instances>
-<<<<<<< HEAD
 <instance part="LED-1" gate="G$1" x="86.36" y="35.56" smashed="yes">
 <attribute name="NAME" x="92.456" y="30.988" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="94.615" y="30.988" size="1.778" layer="96" rot="R90"/>
@@ -7378,28 +7365,14 @@ Setup for 330mA per LED.</text>
 <instance part="LED-3" gate="G$1" x="50.8" y="33.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="44.704" y="37.592" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="42.545" y="37.592" size="1.778" layer="96" rot="R270"/>
-=======
-<instance part="LED-1" gate="G$1" x="99.06" y="35.56" smashed="yes">
-<attribute name="NAME" x="105.156" y="30.988" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="107.315" y="30.988" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="LED-3" gate="G$1" x="63.5" y="33.02" smashed="yes" rot="R180">
-<attribute name="NAME" x="57.404" y="37.592" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="55.245" y="37.592" size="1.778" layer="96" rot="R270"/>
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 </instance>
 <instance part="VCC-CLIP" gate="CLIP" x="-35.56" y="-10.16" smashed="yes"/>
 <instance part="GND-CLIP" gate="CLIP" x="-68.58" y="5.08" smashed="yes"/>
 <instance part="GND10" gate="1" x="-58.42" y="2.54" smashed="yes">
 <attribute name="VALUE" x="-60.96" y="0" size="1.778" layer="96"/>
 </instance>
-<<<<<<< HEAD
 <instance part="P+1" gate="VCC" x="-33.02" y="25.4" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-30.48" y="22.86" size="1.778" layer="96" rot="R180"/>
-=======
-<instance part="P+1" gate="VCC" x="-20.32" y="30.48" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-17.78" y="27.94" size="1.778" layer="96" rot="R180"/>
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 </instance>
 <instance part="PWM-CLIP" gate="CLIP" x="-68.58" y="-25.4" smashed="yes"/>
 <instance part="IC4" gate="IC" x="43.18" y="5.08" smashed="yes">
@@ -7424,13 +7397,8 @@ Setup for 330mA per LED.</text>
 <attribute name="NAME" x="20.32" y="33.02" size="1.27" layer="95" font="vector"/>
 <attribute name="VALUE" x="20.32" y="30.48" size="1.27" layer="96" font="vector"/>
 </instance>
-<<<<<<< HEAD
 <instance part="GND1" gate="1" x="76.2" y="35.56" smashed="yes" rot="R270">
 <attribute name="VALUE" x="73.66" y="38.1" size="1.778" layer="96" rot="R270"/>
-=======
-<instance part="GND1" gate="1" x="88.9" y="35.56" smashed="yes" rot="R270">
-<attribute name="VALUE" x="86.36" y="38.1" size="1.778" layer="96" rot="R270"/>
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 </instance>
 <instance part="VCC-CLIP3" gate="CLIP" x="-35.56" y="5.08" smashed="yes"/>
 <instance part="GND-CLIP3" gate="CLIP" x="-68.58" y="-10.16" smashed="yes"/>
@@ -7438,7 +7406,6 @@ Setup for 330mA per LED.</text>
 <attribute name="VALUE" x="-60.96" y="-15.24" size="1.778" layer="96"/>
 </instance>
 <instance part="PWM-CLIP1" gate="CLIP" x="-35.56" y="-25.4" smashed="yes"/>
-<<<<<<< HEAD
 <instance part="D1" gate="G$1" x="-25.4" y="25.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="-25.4" y="23.6474" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -7555,119 +7522,6 @@ Setup for 330mA per LED.</text>
 <attribute name="NAME" x="-59.69" y="47.625" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-59.69" y="55.88" size="1.778" layer="96" rot="R180"/>
 </instance>
-=======
-<instance part="D1" gate="G$1" x="-12.7" y="30.48" smashed="yes" rot="R180">
-<attribute name="NAME" x="-12.7" y="28.7274" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-15.24" y="32.7914" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R1" gate="G$1" x="-45.72" y="58.42" smashed="yes">
-<attribute name="NAME" x="-46.99" y="59.9186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-49.53" y="55.118" size="1.778" layer="96"/>
-</instance>
-<instance part="FRAME1" gate="G$1" x="-114.3" y="-81.28" smashed="yes">
-<attribute name="DRAWING_NAME" x="102.87" y="-66.04" size="2.54" layer="94"/>
-<attribute name="LAST_DATE_TIME" x="102.87" y="-71.12" size="2.286" layer="94"/>
-<attribute name="SHEET" x="116.205" y="-76.2" size="2.54" layer="94"/>
-</instance>
-<instance part="L1" gate="G$1" x="40.64" y="30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.1" y="27.94" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="43.18" y="27.94" size="1.27" layer="96" rot="R90"/>
-</instance>
-<instance part="1UF2" gate="G$1" x="-7.62" y="68.58" smashed="yes">
-<attribute name="NAME" x="-5.08" y="71.12" size="1.27" layer="95" font="vector"/>
-<attribute name="VALUE" x="-5.08" y="68.58" size="1.27" layer="96" font="vector"/>
-</instance>
-<instance part="U$1" gate="G$1" x="-7.62" y="63.5" smashed="yes">
-<attribute name="VALUE" x="-9.144" y="60.96" size="1.27" layer="96"/>
-</instance>
-<instance part="U$7" gate="G$1" x="-7.62" y="48.26" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-6.096" y="50.8" size="1.27" layer="96" rot="R180"/>
-</instance>
-<instance part="U1" gate="G$1" x="-25.4" y="60.96" smashed="yes">
-<attribute name="NAME" x="-35.5825" y="76.7429" size="1.272809375" layer="95"/>
-<attribute name="VALUE" x="-35.05303125" y="41.3999" size="1.27013125" layer="96"/>
-</instance>
-<instance part="D6" gate="G$1" x="-45.72" y="76.2" smashed="yes">
-<attribute name="NAME" x="-42.164" y="71.628" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-40.005" y="71.628" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R6" gate="G$1" x="-40.64" y="78.74" smashed="yes">
-<attribute name="NAME" x="-44.45" y="80.2386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-44.45" y="75.438" size="1.778" layer="96"/>
-</instance>
-<instance part="J3" gate="G$1" x="-48.26" y="43.18" smashed="yes">
-<attribute name="VALUE" x="-53.34" y="35.814" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-53.34" y="51.308" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="U$12" gate="G$1" x="-40.64" y="38.1" smashed="yes">
-<attribute name="VALUE" x="-42.164" y="35.56" size="1.27" layer="96"/>
-</instance>
-<instance part="U3" gate="G$1" x="27.94" y="-40.64" smashed="yes">
-<attribute name="NAME" x="10.1589" y="-32.01945" size="2.08293125" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="10.1344" y="-52.2767" size="2.0858" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="U$8" gate="G$1" x="50.8" y="-45.72" smashed="yes">
-<attribute name="VALUE" x="49.276" y="-48.26" size="1.27" layer="96"/>
-</instance>
-<instance part="1UF4" gate="G$1" x="50.8" y="-33.02" smashed="yes">
-<attribute name="NAME" x="53.34" y="-30.48" size="1.27" layer="95" font="vector"/>
-<attribute name="VALUE" x="53.34" y="-33.02" size="1.27" layer="96" font="vector"/>
-</instance>
-<instance part="1UF5" gate="G$1" x="5.08" y="-33.02" smashed="yes">
-<attribute name="NAME" x="7.62" y="-30.48" size="1.27" layer="95" font="vector"/>
-<attribute name="VALUE" x="7.62" y="-33.02" size="1.27" layer="96" font="vector"/>
-</instance>
-<instance part="U$9" gate="G$1" x="5.08" y="-25.4" smashed="yes" rot="R180">
-<attribute name="VALUE" x="6.604" y="-22.86" size="1.27" layer="96" rot="R180"/>
-</instance>
-<instance part="U$10" gate="G$1" x="50.8" y="-25.4" smashed="yes" rot="R180">
-<attribute name="VALUE" x="52.324" y="-22.86" size="1.27" layer="96" rot="R180"/>
-</instance>
-<instance part="U$13" gate="G$1" x="-5.08" y="76.2" smashed="yes">
-<attribute name="VALUE" x="-6.604" y="77.216" size="1.27" layer="96"/>
-</instance>
-<instance part="U$2" gate="G$1" x="55.88" y="-35.56" smashed="yes" rot="R270">
-<attribute name="VALUE" x="56.896" y="-34.036" size="1.27" layer="96" rot="R270"/>
-</instance>
-<instance part="SUPPLY1" gate="G$1" x="5.08" y="-35.56" smashed="yes" rot="R90">
-<attribute name="VALUE" x="1.524" y="-36.576" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="U$3" gate="G$1" x="-38.1" y="43.18" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-37.084" y="44.704" size="1.27" layer="96" rot="R270"/>
-</instance>
-<instance part="U$4" gate="G$1" x="-33.02" y="78.74" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-32.004" y="80.264" size="1.27" layer="96" rot="R270"/>
-</instance>
-<instance part="LED-2" gate="G$1" x="83.82" y="25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="79.248" y="19.304" size="1.778" layer="95"/>
-<attribute name="VALUE" x="79.248" y="17.145" size="1.778" layer="96"/>
-</instance>
-<instance part="J1" gate="J1" x="-83.82" y="50.8" smashed="yes">
-<attribute name="VALUE" x="-86.36" y="42.926" size="1.778" layer="96" font="vector" align="top-left"/>
-<attribute name="NAME" x="-86.36" y="58.42" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="U$5" gate="G$1" x="-76.2" y="45.72" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-72.136" y="43.18" size="1.27" layer="96" rot="MR0"/>
-</instance>
-<instance part="U$6" gate="G$1" x="-78.74" y="43.18" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-77.216" y="40.64" size="1.27" layer="96" rot="MR0"/>
-</instance>
-<instance part="SUPPLY2" gate="G$1" x="-76.2" y="63.5" smashed="yes">
-<attribute name="VALUE" x="-77.216" y="67.056" size="1.778" layer="96"/>
-</instance>
-<instance part="D3" gate="G$1" x="-76.2" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="-77.9526" y="63.5" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-73.8886" y="63.5" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="J2" gate="G$1" x="-63.5" y="63.5" smashed="yes">
-<attribute name="VALUE" x="-68.58" y="56.134" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-68.58" y="71.628" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="C2" gate="G$1" x="12.7" y="30.48" smashed="yes">
-<attribute name="NAME" x="15.24" y="33.02" size="1.27" layer="95" font="vector"/>
-<attribute name="VALUE" x="15.24" y="30.48" size="1.27" layer="96" font="vector"/>
-</instance>
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 </instances>
 <busses>
 </busses>
@@ -7837,11 +7691,7 @@ Setup for 330mA per LED.</text>
 <segment>
 <wire x1="60.96" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="LED-3" gate="G$1" pin="S"/>
-<<<<<<< HEAD
 <label x="71.12" y="33.02" size="1.778" layer="95" rot="R180"/>
-=======
-<label x="83.82" y="33.02" size="1.778" layer="95" rot="R180"/>
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 </segment>
 </net>
 <net name="GND2" class="0">
@@ -7947,10 +7797,7 @@ Setup for 330mA per LED.</text>
 <segment>
 <pinref part="LED-2" gate="G$1" pin="S"/>
 <wire x1="71.12" y1="33.02" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED-2" gate="G$1" pin="S"/>
-<wire x1="83.82" y1="33.02" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
+<label x="66.04" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -7963,36 +7810,22 @@ Setup for 330mA per LED.</text>
 <segment>
 <pinref part="LED-1" gate="G$1" pin="C"/>
 <pinref part="LED-2" gate="G$1" pin="A"/>
-<<<<<<< HEAD
 <wire x1="86.36" y1="27.94" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
-=======
-<wire x1="99.06" y1="27.94" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="LED-2" gate="G$1" pin="C"/>
 <pinref part="LED-3" gate="G$1" pin="A"/>
-<<<<<<< HEAD
 <wire x1="63.5" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="25.4" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
-=======
-<wire x1="76.2" y1="25.4" x2="63.5" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="25.4" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 </segment>
 </net>
 <net name="N$4" class="1">
 <segment>
 <pinref part="J1" gate="J1" pin="VBUS"/>
-<<<<<<< HEAD
 <wire x1="-73.66" y1="58.42" x2="-78.74" y2="58.42" width="0.1524" layer="91"/>
-=======
-<wire x1="-76.2" y1="58.42" x2="-78.74" y2="58.42" width="0.1524" layer="91"/>
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 <pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 </net>
@@ -8024,7 +7857,6 @@ Setup for 330mA per LED.</text>
 <wire x1="-58.42" y1="68.58" x2="-40.64" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<<<<<<< HEAD
 <net name="N$12" class="1">
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
@@ -8040,8 +7872,6 @@ Setup for 330mA per LED.</text>
 <wire x1="-63.5" y1="50.8" x2="-40.64" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-=======
->>>>>>> b2d98356d4a4bc7831d9ffbc6a352b6fdcb19846
 </nets>
 </sheet>
 </sheets>
