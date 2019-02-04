@@ -401,6 +401,20 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="FIDUCIAL-1X2">
+<description>&lt;h3&gt;Fiducial - Circle, 1mm&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-MICRO">
+<description>&lt;h3&gt;Fiducial - Circle, 0.25in&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VCC">
@@ -413,6 +427,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="FIDUCIAL">
+<description>&lt;h3&gt;Fiducial&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -436,6 +459,25 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" prefix="FD">
+<description>&lt;h3&gt;Fiducial Alignment Points&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UFIDUCIAL" package="FIDUCIAL-MICRO">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7319,7 +7361,7 @@ Manufacturer: Hirose&lt;br&gt;
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="2k"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="L1" library="microbuilder" deviceset="INDUCTOR" device="TDK_VLC6045"/>
-<part name="1UF2" library="microbuilder" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0603"/>
 <part name="U$1" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$7" library="microbuilder" deviceset="GND" device=""/>
 <part name="U1" library="ATSAMD11C14A-SSUT" deviceset="ATSAMD11C14A-SSUT" device=""/>
@@ -7348,6 +7390,10 @@ Manufacturer: Hirose&lt;br&gt;
 <part name="C2" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_C" value="100uF"/>
 <part name="F1" library="Adafruit" deviceset="PTCFUSE" device="-1812" value="TLC-MSMD110/24"/>
 <part name="JP1" library="Adafruit" deviceset="PINHD-1X1" device=""/>
+<part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -7422,7 +7468,7 @@ Setup for 330mA per LED.</text>
 <attribute name="NAME" x="38.1" y="27.94" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="43.18" y="27.94" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="1UF2" gate="G$1" x="-7.62" y="68.58" smashed="yes">
+<instance part="C6" gate="G$1" x="-7.62" y="68.58" smashed="yes">
 <attribute name="NAME" x="-5.08" y="71.12" size="1.27" layer="95" font="vector"/>
 <attribute name="VALUE" x="-5.08" y="68.58" size="1.27" layer="96" font="vector"/>
 </instance>
@@ -7522,6 +7568,10 @@ Setup for 330mA per LED.</text>
 <attribute name="NAME" x="-59.69" y="47.625" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-59.69" y="55.88" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="FD1" gate="G$1" x="48.26" y="-53.34" smashed="yes"/>
+<instance part="FD2" gate="G$1" x="53.34" y="-53.34" smashed="yes"/>
+<instance part="FD3" gate="G$1" x="58.42" y="-53.34" smashed="yes"/>
+<instance part="FD4" gate="G$1" x="63.5" y="-53.34" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -7604,7 +7654,7 @@ Setup for 330mA per LED.</text>
 <pinref part="U$10" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="1UF2" gate="G$1" pin="P$2"/>
+<pinref part="C6" gate="G$1" pin="P$2"/>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -7732,7 +7782,7 @@ Setup for 330mA per LED.</text>
 </net>
 <net name="3.3V" class="1">
 <segment>
-<pinref part="1UF2" gate="G$1" pin="P$1"/>
+<pinref part="C6" gate="G$1" pin="P$1"/>
 <wire x1="-5.08" y1="73.66" x2="-7.62" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VDD"/>
 <junction x="-7.62" y="73.66"/>
