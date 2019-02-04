@@ -1145,9 +1145,9 @@ einem neuen Namen ab.</description>
 <wire x1="35.37" y1="5.5384" x2="35.624" y2="5.5384" width="0.2032" layer="16"/>
 <wire x1="35.624" y1="5.5384" x2="39.0784" y2="2.084" width="0.2032" layer="16"/>
 <via x="45.7" y="12.3" extent="1-16" drill="0.4"/>
-<via x="43.4" y="12.3" extent="1-16" drill="0.4"/>
-<via x="44.5" y="14.9" extent="1-16" drill="0.4"/>
-<via x="44.6" y="9.2" extent="1-16" drill="0.4"/>
+<via x="43.3" y="12.3" extent="1-16" drill="0.4"/>
+<via x="44.5" y="15" extent="1-16" drill="0.4"/>
+<via x="44.5" y="9.2" extent="1-16" drill="0.4"/>
 </signal>
 <signal name="LED-">
 <contactref element="LED-3" pad="C"/>
