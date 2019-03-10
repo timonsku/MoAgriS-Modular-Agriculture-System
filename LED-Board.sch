@@ -7864,7 +7864,7 @@ Holes are offset 0.005" from center, locking pins in place during soldering.
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="2k"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="L1" library="microbuilder" deviceset="INDUCTOR" device="TDK_VLC6045"/>
-<part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10uF"/>
 <part name="U$1" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$7" library="microbuilder" deviceset="GND" device=""/>
 <part name="U1" library="ATSAMD11C14A-SSUT" deviceset="ATSAMD11C14A-SSUT" device=""/>
@@ -7874,7 +7874,7 @@ Holes are offset 0.005" from center, locking pins in place during soldering.
 <part name="U3" library="LDL1117S12R" deviceset="LDL1117S12R" device=""/>
 <part name="U$8" library="microbuilder" deviceset="GND" device=""/>
 <part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
-<part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10uF"/>
 <part name="U$9" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$10" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$13" library="microbuilder" deviceset="3.3V" device=""/>
@@ -7996,7 +7996,7 @@ Setup for 330mA per LED.</text>
 <attribute name="VALUE" x="-62.484" y="35.56" size="1.27" layer="96"/>
 </instance>
 <instance part="U3" gate="G$1" x="78.74" y="-27.94" smashed="yes">
-<attribute name="NAME" x="60.9589" y="-19.31945" size="2.08293125" layer="95" ratio="10" rot="SR0"/>
+<attribute name="NAME" x="68.5789" y="-19.31945" size="2.08293125" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="60.9344" y="-39.5767" size="2.0858" layer="96" ratio="10" rot="SR0"/>
 </instance>
 <instance part="U$8" gate="G$1" x="101.6" y="-33.02" smashed="yes">
