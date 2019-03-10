@@ -7888,14 +7888,14 @@ Holes are offset 0.005" from center, locking pins in place during soldering.
 <part name="U$6" library="microbuilder" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-B340A" value="3A/40V/500mV"/>
-<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
+<part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
 <part name="C2" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_D" value="100uF"/>
 <part name="F1" library="Adafruit" deviceset="PTCFUSE" device="-1812" value="TLC-MSMD110/24"/>
 <part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
-<part name="J3" library="SparkFun-Connectors" deviceset="CONN_05" device=""/>
+<part name="J2" library="SparkFun-Connectors" deviceset="CONN_05" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8051,7 +8051,7 @@ Setup for 330mA per LED.</text>
 <instance part="D3" gate="G$1" x="-76.2" y="60.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="-77.9526" y="60.96" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="J2" gate="G$1" x="-66.04" y="63.5" smashed="yes">
+<instance part="J3" gate="G$1" x="-66.04" y="63.5" smashed="yes">
 <attribute name="VALUE" x="-71.12" y="56.134" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-71.12" y="71.628" size="1.778" layer="95" font="vector"/>
 </instance>
@@ -8066,7 +8066,7 @@ Setup for 330mA per LED.</text>
 <instance part="FD2" gate="G$1" x="53.34" y="-53.34" smashed="yes"/>
 <instance part="FD3" gate="G$1" x="58.42" y="-53.34" smashed="yes"/>
 <instance part="FD4" gate="G$1" x="63.5" y="-53.34" smashed="yes"/>
-<instance part="J3" gate="G$1" x="-68.58" y="45.72" smashed="yes">
+<instance part="J2" gate="G$1" x="-68.58" y="45.72" smashed="yes">
 <attribute name="VALUE" x="-71.12" y="35.814" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-71.12" y="53.848" size="1.778" layer="95" font="vector"/>
 </instance>
@@ -8169,7 +8169,7 @@ Setup for 330mA per LED.</text>
 <pinref part="U$6" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 <pinref part="U$12" gate="G$1" pin="GND"/>
 </segment>
 </net>
@@ -8302,14 +8302,14 @@ Setup for 330mA per LED.</text>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="3.3V"/>
-<pinref part="J3" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
 <segment>
 <label x="-48.26" y="45.72" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="PA31/SWDIO"/>
-<pinref part="J3" gate="G$1" pin="3"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="-40.64" y1="45.72" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8318,7 +8318,7 @@ Setup for 330mA per LED.</text>
 <pinref part="U1" gate="G$1" pin="PA30/SWCLK"/>
 <label x="-48.26" y="48.26" size="1.778" layer="95"/>
 <wire x1="-50.8" y1="48.26" x2="-48.26" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="4"/>
+<pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="-48.26" y1="48.26" x2="-40.64" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="48.26" x2="-60.96" y2="48.26" width="0.1524" layer="91"/>
 </segment>
@@ -8383,28 +8383,28 @@ Setup for 330mA per LED.</text>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PA14/AIN6"/>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="J3" gate="G$1" pin="1"/>
 <wire x1="-60.96" y1="60.96" x2="-40.64" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PA09"/>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="-60.96" y1="63.5" x2="-40.64" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PA08"/>
-<pinref part="J2" gate="G$1" pin="3"/>
+<pinref part="J3" gate="G$1" pin="3"/>
 <wire x1="-60.96" y1="66.04" x2="-40.64" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PA05/AIN3"/>
-<pinref part="J2" gate="G$1" pin="4"/>
+<pinref part="J3" gate="G$1" pin="4"/>
 <wire x1="-60.96" y1="68.58" x2="-40.64" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8419,7 +8419,7 @@ Setup for 330mA per LED.</text>
 <net name="RESET" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PA28/!RST"/>
-<pinref part="J3" gate="G$1" pin="5"/>
+<pinref part="J2" gate="G$1" pin="5"/>
 <wire x1="-40.64" y1="50.8" x2="-60.96" y2="50.8" width="0.1524" layer="91"/>
 <label x="-48.26" y="50.8" size="1.778" layer="95"/>
 </segment>
