@@ -817,7 +817,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="7.25" y="68.098" size="0.762" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="7.283" y="70.625" size="0.762" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="C6" library="microbuilder" package="0603" value="10uF" x="12.371" y="56.836" smashed="yes" rot="R180">
+<element name="C6" library="microbuilder" package="0603" value="1uF" x="12.371" y="56.836" smashed="yes" rot="R180">
 <attribute name="NAME" x="10.593" y="56.963" size="0.762" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="10.593" y="57.598" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>

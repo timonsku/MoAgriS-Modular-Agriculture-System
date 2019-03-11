@@ -12579,7 +12579,7 @@ by exp-lbrs.ulp</description>
 <part name="U$3" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2"/>
 <part name="U$4" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -12670,9 +12670,9 @@ Setup for 330mA per LED.</text>
 <instance part="U$4" gate="G$1" x="-2.54" y="55.88" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-1.016" y="56.896" size="1.27" layer="96" rot="MR0"/>
 </instance>
-<instance part="C1" gate="G$1" x="-2.54" y="48.26" smashed="yes" rot="R180">
-<attribute name="NAME" x="-4.064" y="47.879" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-4.064" y="52.959" size="1.778" layer="96" rot="R180"/>
+<instance part="C6" gate="G$1" x="-2.54" y="48.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="3.556" y="47.879" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="4.826" y="51.689" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND2" gate="1" x="-2.54" y="22.86" smashed="yes">
 <attribute name="VALUE" x="-5.08" y="20.32" size="1.778" layer="96"/>
@@ -12776,7 +12776,7 @@ Setup for 330mA per LED.</text>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -12847,7 +12847,7 @@ Setup for 330mA per LED.</text>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="3.3V"/>
-<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="VDD"/>
 <junction x="-2.54" y="53.34"/>
 </segment>

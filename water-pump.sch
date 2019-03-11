@@ -7568,7 +7568,7 @@ Holes are offset 0.005" from center, locking pins in place during soldering.
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="2k"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="P+4" library="microbuilder" deviceset="VCC" device=""/>
-<part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10uF"/>
+<part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
 <part name="U1" library="LDL1117S12R" deviceset="LDL1117S12R" device=""/>
 <part name="U$1" library="microbuilder" deviceset="GND" device=""/>
