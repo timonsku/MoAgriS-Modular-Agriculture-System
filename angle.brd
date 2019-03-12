@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -29,25 +29,25 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -68,59 +68,59 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
-<layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
-<layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
-<layer number="108" name="tplace-old" color="10" fill="1" visible="no" active="yes"/>
-<layer number="109" name="ref-old" color="11" fill="1" visible="no" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
-<layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
-<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
-<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
-<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
-<layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
-<layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -129,21 +129,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="231" name="231bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
 <layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
-<layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -156,36 +156,71 @@
 <wire x1="9.5" y1="82.7" x2="6" y2="79.2" width="0" layer="20" curve="90"/>
 <wire x1="6" y1="79.2" x2="6" y2="56.39" width="0" layer="20"/>
 <wire x1="6" y1="56.39" x2="9.5" y2="52.89" width="0" layer="20" curve="90"/>
-<wire x1="9.5" y1="52.89" x2="60.5" y2="52.89" width="0" layer="20"/>
-<text x="13.769" y="70.467" size="1.016" layer="25">GND</text>
+<wire x1="9.5" y1="52.89" x2="20.81" y2="52.89" width="0" layer="20"/>
+<wire x1="20.81" y1="52.89" x2="20.9" y2="52.3" width="0" layer="20"/>
+<wire x1="21.9" y1="52.3" x2="22" y2="52.9" width="0" layer="20"/>
+<wire x1="22" y1="52.9" x2="51.8" y2="52.9" width="0" layer="20"/>
+<wire x1="51.8" y1="52.9" x2="51.9" y2="52.2" width="0" layer="20"/>
+<wire x1="52.9" y1="52.2" x2="52.99" y2="52.89" width="0" layer="20"/>
+<wire x1="52.99" y1="52.89" x2="60.5" y2="52.89" width="0" layer="20"/>
+<text x="51.569" y="70.267" size="1.016" layer="25">GND</text>
 <text x="32.367" y="70.54" size="1.016" layer="25">BUS</text>
-<text x="55.579" y="70.29" size="1.016" layer="25">VCC</text>
-<dimension x1="21.498" y1="79.95" x2="21.6" y2="70" x3="24.5517625" y3="75.005778125" textsize="1.778" layer="47"/>
-<dimension x1="21.498" y1="61.344" x2="21.4" y2="71.4" x3="11.736278125" y3="66.27734375" textsize="1.778" layer="47"/>
+<text x="15.679" y="70.49" size="1.016" layer="25">VCC</text>
 <polygon width="0.1524" layer="29">
 <vertex x="66" y="60.3"/>
 <vertex x="1.2" y="60.3"/>
-<vertex x="1.2" y="50.7"/>
-<vertex x="66" y="50.7"/>
+<vertex x="1.2" y="51.6"/>
+<vertex x="66" y="51.6"/>
 </polygon>
 <polygon width="0.1524" layer="30">
 <vertex x="66" y="60.3"/>
-<vertex x="66" y="50.7"/>
-<vertex x="1.2" y="50.7"/>
+<vertex x="66" y="51.6"/>
+<vertex x="1.2" y="51.6"/>
 <vertex x="1.2" y="60.3"/>
 </polygon>
-<dimension x1="64" y1="58.1" x2="35" y2="59" x3="49.5" y3="59.8" textsize="1.778" layer="47" dtype="horizontal"/>
 <wire x1="64" y1="58" x2="35" y2="58" width="0.001" layer="20"/>
 <wire x1="35" y1="58" x2="35" y2="56.4" width="0.001" layer="20"/>
 <wire x1="35" y1="56.4" x2="64" y2="56.4" width="0.001" layer="20"/>
-<text x="16.721" y="70.49" size="1.016" layer="26" rot="MR0">VCC</text>
+<text x="18.521" y="70.49" size="1.016" layer="26" rot="MR0">VCC</text>
 <text x="35.033" y="70.54" size="1.016" layer="26" rot="MR0">BUS</text>
-<text x="58.731" y="70.367" size="1.016" layer="26" rot="MR0">GND</text>
-<dimension x1="6" y1="56.39" x2="64" y2="56.4" x3="35.003446875" y3="36.397" textsize="1.778" layer="47"/>
-<dimension x1="6" y1="56.39" x2="27.5" y2="56.4" x3="16.753346875" y3="49.195653125" textsize="1.778" layer="47"/>
-<dimension x1="64" y1="58" x2="42.5" y2="58" x3="53.25" y3="84.7" textsize="1.778" layer="47"/>
-<dimension x1="43.6" y1="81.7" x2="42.5" y2="81.7" x3="43.05" y3="87.9" textsize="1.778" layer="47"/>
-<dimension x1="27.5" y1="81.7" x2="26.4" y2="81.7" x3="26.95" y3="87.6" textsize="1.778" layer="47"/>
+<text x="54.631" y="70.267" size="1.016" layer="26" rot="MR0">GND</text>
+<text x="16.469" y="38.567" size="1.016" layer="25">GND</text>
+<text x="32.067" y="38.64" size="1.016" layer="25">BUS</text>
+<text x="51.979" y="38.39" size="1.016" layer="25">VCC</text>
+<text x="54.821" y="38.39" size="1.016" layer="26" rot="MR0">VCC</text>
+<text x="34.733" y="38.64" size="1.016" layer="26" rot="MR0">BUS</text>
+<text x="19.531" y="38.567" size="1.016" layer="26" rot="MR0">GND</text>
+<hole x="10" y="47.5" drill="3"/>
+<hole x="60" y="47.5" drill="3"/>
+<wire x1="60.5" y1="21.69" x2="64" y2="25.2" width="0" layer="20" curve="90"/>
+<wire x1="64" y1="26.8" x2="64" y2="48.254" width="0" layer="20"/>
+<wire x1="64" y1="48.254" x2="61.008" y2="51.5" width="0" layer="20" curve="90"/>
+<wire x1="61.008" y1="51.5" x2="53" y2="51.5" width="0" layer="20"/>
+<wire x1="53" y1="51.5" x2="52.9" y2="52.2" width="0" layer="20"/>
+<wire x1="51.9" y1="52.2" x2="51.8" y2="51.5" width="0" layer="20"/>
+<wire x1="51.8" y1="51.5" x2="22" y2="51.5" width="0" layer="20"/>
+<wire x1="22" y1="51.5" x2="21.9" y2="52.3" width="0" layer="20"/>
+<wire x1="20.9" y1="52.3" x2="20.8" y2="51.5" width="0" layer="20"/>
+<wire x1="20.8" y1="51.5" x2="9.5" y2="51.5" width="0" layer="20"/>
+<wire x1="9.5" y1="51.5" x2="6" y2="48" width="0" layer="20" curve="90"/>
+<wire x1="6" y1="48" x2="6" y2="25.19" width="0" layer="20"/>
+<wire x1="6" y1="25.19" x2="9.5" y2="21.69" width="0" layer="20" curve="90"/>
+<wire x1="9.5" y1="21.69" x2="60.5" y2="21.69" width="0" layer="20"/>
+<wire x1="64" y1="26.8" x2="35" y2="26.8" width="0.001" layer="20"/>
+<wire x1="35" y1="26.8" x2="35" y2="25.2" width="0.001" layer="20"/>
+<wire x1="35" y1="25.2" x2="64" y2="25.2" width="0.001" layer="20"/>
+<polygon width="0.1524" layer="29">
+<vertex x="66.4" y="28"/>
+<vertex x="1.6" y="28"/>
+<vertex x="1.6" y="19.9"/>
+<vertex x="66.4" y="19.9"/>
+</polygon>
+<polygon width="0.1524" layer="30">
+<vertex x="66.4" y="28"/>
+<vertex x="66.4" y="20"/>
+<vertex x="1.6" y="20"/>
+<vertex x="1.6" y="28"/>
+</polygon>
 </plain>
 <libraries>
 <library name="timon-diverses">
@@ -379,84 +414,210 @@
 </pass>
 </autorouter>
 <elements>
-<element name="GND-CLIP" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.5" y="65" smashed="yes"/>
-<element name="PWM-CLIP" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="33.5" y="65" smashed="yes"/>
-<element name="VCC-CLIP" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.5" y="65" smashed="yes"/>
-<element name="VCC-CLIP3" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.498" y="64.994" smashed="yes" rot="MR270"/>
-<element name="GND-CLIP3" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.498" y="64.996" smashed="yes" rot="R90"/>
-<element name="PWM-CLIP1" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="33.498" y="64.996" smashed="yes" rot="R90"/>
-<element name="VCC-CLIP1" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.5" y="77.3" smashed="yes"/>
-<element name="GND-CLIP1" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.498" y="77.3" smashed="yes"/>
-<element name="PWM-CLIP2" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="33.5" y="77.3" smashed="yes"/>
-<element name="VCC-CLIP2" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.498" y="77.3" smashed="yes" rot="R90"/>
-<element name="GND-CLIP2" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.498" y="77.3" smashed="yes" rot="R90"/>
-<element name="PWM-CLIP3" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="33.5" y="77.3" smashed="yes" rot="R90"/>
+<element name="AGND-CLIP" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.5" y="65" smashed="yes"/>
+<element name="ABUS-CLIP" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="33.5" y="65" smashed="yes"/>
+<element name="AVCC-CLIP" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.5" y="65" smashed="yes"/>
+<element name="AVCC-CLIP3" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.498" y="64.994" smashed="yes" rot="MR270"/>
+<element name="AGND-CLIP3" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.498" y="64.996" smashed="yes" rot="R90"/>
+<element name="ABUS-CLIP1" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="33.498" y="64.996" smashed="yes" rot="R90"/>
+<element name="AVCC-CLIP1" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.5" y="77.3" smashed="yes"/>
+<element name="AGND-CLIP1" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.498" y="77.3" smashed="yes"/>
+<element name="ABUS-CLIP2" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="33.5" y="77.3" smashed="yes"/>
+<element name="AVCC-CLIP2" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.498" y="77.3" smashed="yes" rot="R90"/>
+<element name="AGND-CLIP2" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.498" y="77.3" smashed="yes" rot="R90"/>
+<element name="ABUS-CLIP3" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="33.5" y="77.3" smashed="yes" rot="R90"/>
+<element name="BVCC-CLIP2" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.5" y="45.1" smashed="yes" rot="R90"/>
+<element name="BGND-CLIP" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.5" y="32.8" smashed="yes"/>
+<element name="BBUS-CLIP" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="37.4" y="45.1" smashed="yes"/>
+<element name="BVCC-CLIP" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.5" y="45.1" smashed="yes"/>
+<element name="BGND-CLIP2" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.5" y="32.8" smashed="yes" rot="R90"/>
+<element name="BBUS-CLIP2" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="37.4" y="45.1" smashed="yes" rot="R90"/>
+<element name="BVCC-CLIP3" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.5" y="32.8" smashed="yes"/>
+<element name="BGND-CLIP1" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.5" y="45.1" smashed="yes"/>
+<element name="BBUS-CLIP1" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="37.4" y="32.8" smashed="yes"/>
+<element name="BVCC-CLIP1" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="49.5" y="32.8" smashed="yes" rot="R90"/>
+<element name="BGND-CLIP3" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="21.5" y="45.1" smashed="yes" rot="R90"/>
+<element name="BBUS-CLIP3" library="timon-diverses" package="FUSE-HOLDER-5X20MM" value="FUSE-HOLDER-5X20MM" x="37.4" y="32.8" smashed="yes" rot="R90"/>
 </elements>
 <signals>
-<signal name="GND">
-<contactref element="GND-CLIP" pad="CLIP-INPUT1"/>
-<contactref element="GND-CLIP" pad="CLIP-INPUT2"/>
-<contactref element="GND-CLIP3" pad="CLIP-INPUT2"/>
-<contactref element="GND-CLIP3" pad="CLIP-INPUT1"/>
-<contactref element="GND-CLIP1" pad="CLIP-INPUT2"/>
-<contactref element="GND-CLIP1" pad="CLIP-INPUT1"/>
-<contactref element="GND-CLIP2" pad="CLIP-INPUT2"/>
-<contactref element="GND-CLIP2" pad="CLIP-INPUT1"/>
-<polygon width="0.01" layer="1" thermals="no">
-<vertex x="65.4" y="84.1"/>
-<vertex x="43.6" y="84.1"/>
-<vertex x="43.6" y="51"/>
-<vertex x="65.4" y="51"/>
-</polygon>
-<polygon width="0.01" layer="16" thermals="no">
-<vertex x="66.3" y="84.6"/>
-<vertex x="66.3" y="51.6"/>
-<vertex x="43.6" y="51.6"/>
-<vertex x="43.6" y="84.6"/>
-</polygon>
-</signal>
-<signal name="PWM">
-<contactref element="PWM-CLIP" pad="CLIP-INPUT1"/>
-<contactref element="PWM-CLIP" pad="CLIP-INPUT2"/>
-<contactref element="PWM-CLIP1" pad="CLIP-INPUT2"/>
-<contactref element="PWM-CLIP1" pad="CLIP-INPUT1"/>
-<contactref element="PWM-CLIP2" pad="CLIP-INPUT2"/>
-<contactref element="PWM-CLIP2" pad="CLIP-INPUT1"/>
-<contactref element="PWM-CLIP3" pad="CLIP-INPUT2"/>
-<contactref element="PWM-CLIP3" pad="CLIP-INPUT1"/>
+<signal name="ABUS">
+<contactref element="ABUS-CLIP" pad="CLIP-INPUT1"/>
+<contactref element="ABUS-CLIP" pad="CLIP-INPUT2"/>
+<contactref element="ABUS-CLIP1" pad="CLIP-INPUT2"/>
+<contactref element="ABUS-CLIP1" pad="CLIP-INPUT1"/>
+<contactref element="ABUS-CLIP2" pad="CLIP-INPUT2"/>
+<contactref element="ABUS-CLIP2" pad="CLIP-INPUT1"/>
+<contactref element="ABUS-CLIP3" pad="CLIP-INPUT2"/>
+<contactref element="ABUS-CLIP3" pad="CLIP-INPUT1"/>
 <polygon width="0.01" layer="1" thermals="no">
 <vertex x="42.5" y="83.5"/>
-<vertex x="42.5" y="51.6"/>
-<vertex x="27.5" y="51.5"/>
+<vertex x="42.5" y="52.8"/>
+<vertex x="27.5" y="52.8"/>
 <vertex x="27.5" y="83.4"/>
 </polygon>
 <polygon width="0.01" layer="16" thermals="no">
 <vertex x="27.5" y="83.5"/>
-<vertex x="27.5" y="51.6"/>
-<vertex x="42.5" y="51.5"/>
+<vertex x="27.5" y="52.8"/>
+<vertex x="42.5" y="52.8"/>
 <vertex x="42.5" y="83.4"/>
 </polygon>
+<wire x1="33.5" y1="79.95" x2="36.15" y2="77.3" width="0" layer="19" extent="1-1"/>
+<wire x1="30.85" y1="77.3" x2="33.5" y2="79.95" width="0" layer="19" extent="1-1"/>
+<wire x1="33.5" y1="74.65" x2="36.15" y2="77.3" width="0" layer="19" extent="1-1"/>
+<wire x1="33.498" y1="67.646" x2="33.5" y2="74.65" width="0" layer="19" extent="1-1"/>
+<wire x1="36.15" y1="65" x2="33.498" y2="67.646" width="0" layer="19" extent="1-1"/>
+<wire x1="30.85" y1="65" x2="33.498" y2="67.646" width="0" layer="19" extent="1-1"/>
+<wire x1="33.498" y1="62.346" x2="36.15" y2="65" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="VCC-RAW" class="1">
-<contactref element="VCC-CLIP" pad="CLIP-INPUT1"/>
-<contactref element="VCC-CLIP" pad="CLIP-INPUT2"/>
-<contactref element="VCC-CLIP3" pad="CLIP-INPUT2"/>
-<contactref element="VCC-CLIP3" pad="CLIP-INPUT1"/>
-<contactref element="VCC-CLIP1" pad="CLIP-INPUT2"/>
-<contactref element="VCC-CLIP1" pad="CLIP-INPUT1"/>
-<contactref element="VCC-CLIP2" pad="CLIP-INPUT2"/>
-<contactref element="VCC-CLIP2" pad="CLIP-INPUT1"/>
+<signal name="AVCC-RAW" class="1">
+<contactref element="AVCC-CLIP" pad="CLIP-INPUT1"/>
+<contactref element="AVCC-CLIP" pad="CLIP-INPUT2"/>
+<contactref element="AVCC-CLIP3" pad="CLIP-INPUT2"/>
+<contactref element="AVCC-CLIP3" pad="CLIP-INPUT1"/>
+<contactref element="AVCC-CLIP1" pad="CLIP-INPUT2"/>
+<contactref element="AVCC-CLIP1" pad="CLIP-INPUT1"/>
+<contactref element="AVCC-CLIP2" pad="CLIP-INPUT2"/>
+<contactref element="AVCC-CLIP2" pad="CLIP-INPUT1"/>
 <polygon width="0.01" layer="1" thermals="no">
 <vertex x="3.7" y="84.6"/>
-<vertex x="3.7" y="51.6"/>
-<vertex x="26.4" y="51.6"/>
+<vertex x="3.7" y="52.8"/>
+<vertex x="26.4" y="52.8"/>
 <vertex x="26.4" y="84.6"/>
 </polygon>
 <polygon width="0.01" layer="16" thermals="no">
 <vertex x="4.6" y="84.1"/>
 <vertex x="26.4" y="84.1"/>
-<vertex x="26.4" y="51"/>
-<vertex x="4.6" y="51"/>
+<vertex x="26.4" y="52.8"/>
+<vertex x="4.6" y="52.8"/>
+</polygon>
+<wire x1="21.498" y1="79.95" x2="24.15" y2="77.3" width="0" layer="19" extent="1-1"/>
+<wire x1="18.85" y1="77.3" x2="21.498" y2="79.95" width="0" layer="19" extent="1-1"/>
+<wire x1="21.498" y1="74.65" x2="24.15" y2="77.3" width="0" layer="19" extent="1-1"/>
+<wire x1="21.498" y1="67.644" x2="21.498" y2="74.65" width="0" layer="19" extent="1-1"/>
+<wire x1="24.15" y1="65" x2="21.498" y2="67.644" width="0" layer="19" extent="1-1"/>
+<wire x1="18.85" y1="65" x2="21.498" y2="67.644" width="0" layer="19" extent="1-1"/>
+<wire x1="21.498" y1="62.344" x2="24.15" y2="65" width="0" layer="19" extent="1-1"/>
+<polygon width="0.01" layer="16" thermals="no">
+<vertex x="4.6" y="84.1"/>
+<vertex x="26.4" y="84.1"/>
+<vertex x="26.4" y="52.8"/>
+<vertex x="4.6" y="52.8"/>
+</polygon>
+</signal>
+<signal name="AGND">
+<contactref element="AGND-CLIP" pad="CLIP-INPUT1"/>
+<contactref element="AGND-CLIP" pad="CLIP-INPUT2"/>
+<contactref element="AGND-CLIP3" pad="CLIP-INPUT1"/>
+<contactref element="AGND-CLIP3" pad="CLIP-INPUT2"/>
+<contactref element="AGND-CLIP1" pad="CLIP-INPUT1"/>
+<contactref element="AGND-CLIP1" pad="CLIP-INPUT2"/>
+<contactref element="AGND-CLIP2" pad="CLIP-INPUT1"/>
+<contactref element="AGND-CLIP2" pad="CLIP-INPUT2"/>
+<wire x1="49.498" y1="79.95" x2="52.148" y2="77.3" width="0" layer="19" extent="1-1"/>
+<wire x1="46.848" y1="77.3" x2="49.498" y2="79.95" width="0" layer="19" extent="1-1"/>
+<wire x1="49.498" y1="74.65" x2="52.148" y2="77.3" width="0" layer="19" extent="1-1"/>
+<wire x1="49.498" y1="67.646" x2="49.498" y2="74.65" width="0" layer="19" extent="1-1"/>
+<wire x1="52.15" y1="65" x2="49.498" y2="67.646" width="0" layer="19" extent="1-1"/>
+<wire x1="46.85" y1="65" x2="49.498" y2="67.646" width="0" layer="19" extent="1-1"/>
+<wire x1="49.498" y1="62.346" x2="52.15" y2="65" width="0" layer="19" extent="1-1"/>
+<polygon width="0.01" layer="1" thermals="no">
+<vertex x="65.4" y="84.1"/>
+<vertex x="43.6" y="84.1"/>
+<vertex x="43.6" y="52.8"/>
+<vertex x="65.4" y="52.8"/>
+</polygon>
+<polygon width="0.01" layer="16" thermals="no">
+<vertex x="66.3" y="84.6"/>
+<vertex x="66.3" y="52.8"/>
+<vertex x="43.6" y="52.8"/>
+<vertex x="43.6" y="84.6"/>
+</polygon>
+</signal>
+<signal name="BGND">
+<contactref element="BGND-CLIP" pad="CLIP-INPUT1"/>
+<contactref element="BGND-CLIP" pad="CLIP-INPUT2"/>
+<contactref element="BGND-CLIP2" pad="CLIP-INPUT1"/>
+<contactref element="BGND-CLIP2" pad="CLIP-INPUT2"/>
+<contactref element="BGND-CLIP1" pad="CLIP-INPUT1"/>
+<contactref element="BGND-CLIP1" pad="CLIP-INPUT2"/>
+<contactref element="BGND-CLIP3" pad="CLIP-INPUT1"/>
+<contactref element="BGND-CLIP3" pad="CLIP-INPUT2"/>
+<wire x1="21.5" y1="35.45" x2="24.15" y2="32.8" width="0" layer="19" extent="1-1"/>
+<wire x1="24.15" y1="45.1" x2="21.5" y2="35.45" width="0" layer="19" extent="1-1"/>
+<wire x1="21.5" y1="47.75" x2="24.15" y2="45.1" width="0" layer="19" extent="1-1"/>
+<wire x1="18.85" y1="32.8" x2="24.15" y2="32.8" width="0" layer="19" extent="1-1"/>
+<wire x1="21.5" y1="30.15" x2="18.85" y2="32.8" width="0" layer="19" extent="1-1"/>
+<wire x1="18.85" y1="45.1" x2="21.5" y2="30.15" width="0" layer="19" extent="1-1"/>
+<wire x1="21.5" y1="42.45" x2="18.85" y2="45.1" width="0" layer="19" extent="1-1"/>
+<polygon width="0.01" layer="1" thermals="no">
+<vertex x="26.4" y="51.6"/>
+<vertex x="2.9" y="51.6"/>
+<vertex x="2.9" y="20.4"/>
+<vertex x="26.4" y="20.4"/>
+</polygon>
+<polygon width="0.01" layer="16" thermals="no">
+<vertex x="26.4" y="51.6"/>
+<vertex x="26.4" y="19.9"/>
+<vertex x="2.9" y="19.9"/>
+<vertex x="2.9" y="51.6"/>
+</polygon>
+</signal>
+<signal name="BVCC-RAW" class="1">
+<contactref element="BVCC-CLIP" pad="CLIP-INPUT1"/>
+<contactref element="BVCC-CLIP" pad="CLIP-INPUT2"/>
+<contactref element="BVCC-CLIP2" pad="CLIP-INPUT1"/>
+<contactref element="BVCC-CLIP2" pad="CLIP-INPUT2"/>
+<contactref element="BVCC-CLIP1" pad="CLIP-INPUT1"/>
+<contactref element="BVCC-CLIP1" pad="CLIP-INPUT2"/>
+<contactref element="BVCC-CLIP3" pad="CLIP-INPUT1"/>
+<contactref element="BVCC-CLIP3" pad="CLIP-INPUT2"/>
+<wire x1="52.15" y1="45.1" x2="49.5" y2="47.75" width="0" layer="19" extent="1-1"/>
+<wire x1="52.15" y1="32.8" x2="52.15" y2="45.1" width="0" layer="19" extent="1-1"/>
+<wire x1="49.5" y1="35.45" x2="52.15" y2="32.8" width="0" layer="19" extent="1-1"/>
+<wire x1="49.5" y1="42.45" x2="49.5" y2="47.75" width="0" layer="19" extent="1-1"/>
+<wire x1="46.85" y1="45.1" x2="49.5" y2="42.45" width="0" layer="19" extent="1-1"/>
+<wire x1="46.85" y1="32.8" x2="46.85" y2="45.1" width="0" layer="19" extent="1-1"/>
+<wire x1="49.5" y1="30.15" x2="46.85" y2="32.8" width="0" layer="19" extent="1-1"/>
+<polygon width="0.01" layer="1" thermals="no">
+<vertex x="43.6" y="51.6"/>
+<vertex x="43.6" y="19.8"/>
+<vertex x="66.3" y="19.8"/>
+<vertex x="66.3" y="51.6"/>
+</polygon>
+<polygon width="0.01" layer="16" thermals="no">
+<vertex x="43.6" y="51.6"/>
+<vertex x="66.3" y="51.6"/>
+<vertex x="66.3" y="20.2"/>
+<vertex x="43.6" y="20.2"/>
+</polygon>
+</signal>
+<signal name="BBUS">
+<contactref element="BBUS-CLIP" pad="CLIP-INPUT1"/>
+<contactref element="BBUS-CLIP" pad="CLIP-INPUT2"/>
+<contactref element="BBUS-CLIP2" pad="CLIP-INPUT1"/>
+<contactref element="BBUS-CLIP2" pad="CLIP-INPUT2"/>
+<contactref element="BBUS-CLIP1" pad="CLIP-INPUT1"/>
+<contactref element="BBUS-CLIP1" pad="CLIP-INPUT2"/>
+<contactref element="BBUS-CLIP3" pad="CLIP-INPUT1"/>
+<contactref element="BBUS-CLIP3" pad="CLIP-INPUT2"/>
+<wire x1="37.4" y1="47.75" x2="40.05" y2="45.1" width="0" layer="19" extent="1-1"/>
+<wire x1="40.05" y1="32.8" x2="37.4" y2="47.75" width="0" layer="19" extent="1-1"/>
+<wire x1="37.4" y1="35.45" x2="40.05" y2="32.8" width="0" layer="19" extent="1-1"/>
+<wire x1="34.75" y1="45.1" x2="40.05" y2="45.1" width="0" layer="19" extent="1-1"/>
+<wire x1="37.4" y1="42.45" x2="34.75" y2="45.1" width="0" layer="19" extent="1-1"/>
+<wire x1="34.75" y1="32.8" x2="37.4" y2="42.45" width="0" layer="19" extent="1-1"/>
+<wire x1="37.4" y1="30.15" x2="34.75" y2="32.8" width="0" layer="19" extent="1-1"/>
+<polygon width="0.01" layer="16" thermals="no">
+<vertex x="27.5" y="51.7"/>
+<vertex x="27.5" y="21.1"/>
+<vertex x="42.5" y="21"/>
+<vertex x="42.5" y="51.7"/>
+</polygon>
+<polygon width="0.01" layer="1" thermals="no">
+<vertex x="42.5" y="51.70133125"/>
+<vertex x="42.5" y="21.098665625"/>
+<vertex x="27.5" y="20.99866875"/>
+<vertex x="27.498665625" y="51.7"/>
 </polygon>
 </signal>
 </signals>
