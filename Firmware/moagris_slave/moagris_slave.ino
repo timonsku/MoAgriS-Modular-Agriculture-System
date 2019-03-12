@@ -1,7 +1,7 @@
 #include <SDI12.h>
 
 #define HEARTBEATSAFESTATE 1
-//recommended 15000
+//recommended value is 20000UL and do heartbeat every 15000ms
 #define HEARTBEATINTERVAL 150543560UL
 
 #define SDICMDIDENTIFICATION 'I'
@@ -95,8 +95,8 @@ void loop() {
       // character is '!', stop listening and respond to the command
       if (charReceived == '!') {
 
-        //only react on wildcard or sensorAddress
-        if(commandReceived[0]=='?' || commandReceived[0]==sensorAddress){
+        //only react on wildcard or sensorAddress and command is not a heartbeat
+        if((commandReceived[0]=='?' || commandReceived[0]==sensorAddress) && commandReceived.charAt(1)!=SDICMDHEARTBEAT){
 
           Serial.print("rcvd end of cmd ");
           Serial.println(commandReceived);
@@ -105,7 +105,7 @@ void loop() {
           
           uResponse.sIdentification.address=sensorAddress;
           byte finishOffset=0;
-          int intensity = 0;
+          byte intensity = 0;
           //Serial.println(commandReceived);
           switch(commandReceived.charAt(1)){ //if/elseif instead of switch would save 8 bytes
             case SDICMDIDENTIFICATION: //serial number of samd11
@@ -127,9 +127,13 @@ void loop() {
               break;
             case SDICMDFAN:  
             case SDICMDPOWERLED: // set powerled to value (char) 
+            
               //chars 2..4 are acii coded values between 0..255
-              intensity = commandReceived.substring(2,4).toInt(); //costs about 700 Bytes this way!
-              analogWrite(ACTION_PIN, intensity);
+              //intensity = commandReceived.substring(2,4).toInt(); //uses ~700 Bytes!
+              intensity = 0xff & ((byte)commandReceived.charAt(2)*100 + (byte)commandReceived.charAt(3)*10 + (byte)commandReceived.charAt(4)); //command must have 3 chars of value (leading 0s if necessary)
+              
+              analogWrite(ACTION_PIN, intensity); //uses ~550 Bytes!
+              
               strcpy(uResponse.c+1,"ACK");
               finishOffset=1;
               break;
@@ -138,13 +142,6 @@ void loop() {
               strcpy(uResponse.c+1,"ACK");
               finishOffset=1;
               break;
-            /*case SDICMDFAN:
-              //chars 2..4 are acii coded values between 0..255
-              intensity = commandReceived.substring(2,4).toInt();
-              analogWrite(ACTION_PIN, intensity);
-              strcpy(uResponse.c+1,"ACK");
-              finishOffset=1;
-              break;*/
             case SDICMDCHANGEADDR: // change sdi address
               //TODO write to eeprom
               Serial.println("set new address");
@@ -153,10 +150,20 @@ void loop() {
               strcpy(uResponse.c+1,"ACK");
               finishOffset=1;
               break;
+
+            //not needed
+            /*
             case SDICMDHEARTBEAT: //do nothing but send ACK and reset heartbeatcounter afterwards as usual
               strcpy(uResponse.c+1,"ACK");
               finishOffset=1;
-              break;
+              break;*/
+            /*case SDICMDFAN:
+              //chars 2..4 are acii coded values between 0..255
+              intensity = commandReceived.substring(2,4).toInt();
+              analogWrite(ACTION_PIN, intensity);
+              strcpy(uResponse.c+1,"ACK");
+              finishOffset=1;
+              break;*/
             default:
               strcpy(uResponse.c+1,"NAK");
               finishOffset=1;
@@ -167,10 +174,11 @@ void loop() {
           finishResponse((char*)(&uResponse+finishOffset));
           Serial.println(uResponse.c);
           slaveSDI12.sendResponse(uResponse.c);
-          
-          hbPreviousMillis = hbCurrentMillis; //resets heartbeat
-          hbAvailable=true; //new command resets heartbeat
         }
+
+        //reset heartbeat on every command, also for other sensors
+        hbPreviousMillis = hbCurrentMillis; //resets heartbeat
+        hbAvailable=true; //new command resets heartbeat
         
         commandReceived = "";
         slaveSDI12.clearBuffer();
