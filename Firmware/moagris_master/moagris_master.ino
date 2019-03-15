@@ -3,6 +3,8 @@
 #define SERIAL_BAUD 115200  // The baud rate for the output serial port
 #define DATA_PIN 15         // The pin of the SDI-12 data bus
 #define LED_PIN 4
+
+#define ACTION_PIN 2        //pump,powerled
 // Define the SDI-12 bus
 
 SDI12 mySDI12(DATA_PIN);
@@ -14,9 +16,19 @@ SDI12 mySDI12(DATA_PIN);
 */
 String myCommand = "?HELLOSLAVE!";
 
+/*
+ * set safe state even if its the sdi master; otherwise normal pcbs might turn on the action
+ */
+void setSafeState(){
+  digitalWrite(ACTION_PIN,LOW);
+  digitalWrite(LED_PIN,HIGH);
+}
 
 void setup(){
+  setSafeState();
   pinMode(LED_PIN, OUTPUT);
+  pinMode(ACTION_PIN, OUTPUT);
+  
   Serial.begin(SERIAL_BAUD);
   while(!Serial);
 
@@ -64,11 +76,5 @@ void loop(){
   
   }
   digitalWrite(4, HIGH);
-  //blinkwait a little
-  /*
-  digitalWrite(LED_PIN, LOW);
-  delay(3000); // print again in three seconds  
-  digitalWrite(LED_PIN, HIGH); 
-  delay(3000); // print again in three seconds
-*/
+  setSafeState(); //sometimes power pin is turned on without a reason. 
 }
