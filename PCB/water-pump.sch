@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8275,6 +8275,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="U$15" library="microbuilder" deviceset="GND" device=""/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="2k"/>
 <part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="499R"/>
 </parts>
 <sheets>
 <sheet>
@@ -8436,6 +8437,10 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <instance part="S1" gate="G$1" x="-81.28" y="66.04" smashed="yes">
 <attribute name="NAME" x="-81.28" y="67.564" size="1.778" layer="95" font="vector" align="bottom-center"/>
 </instance>
+<instance part="R4" gate="G$1" x="-40.64" y="81.28" smashed="yes">
+<attribute name="NAME" x="-44.45" y="82.7786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-44.45" y="77.978" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8574,14 +8579,11 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </net>
 <net name="PUMP_CTRL" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<label x="-48.26" y="73.66" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="PA02/AIN0"/>
-<wire x1="-53.34" y1="73.66" x2="-43.18" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="73.66" x2="-43.18" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="G"/>
-<wire x1="-58.42" y1="73.66" x2="-53.34" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-53.34" y="73.66"/>
+<wire x1="-43.18" y1="71.12" x2="-43.18" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-43.18" y1="71.12" x2="-35.56" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="71.12" x2="-35.56" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PUMP" class="0">
@@ -8708,6 +8710,18 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="-43.18" y1="55.88" x2="-86.36" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="55.88" x2="-86.36" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-86.36" y="66.04"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="-45.72" y1="73.66" x2="-45.72" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="-53.34" y1="73.66" x2="-45.72" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-53.34" y="73.66"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<wire x1="-58.42" y1="73.66" x2="-53.34" y2="73.66" width="0.1524" layer="91"/>
+<label x="-48.26" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

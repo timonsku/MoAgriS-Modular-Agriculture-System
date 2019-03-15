@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13281,6 +13281,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="2k"/>
 <part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="499R"/>
 </parts>
 <sheets>
 <sheet>
@@ -13443,6 +13444,10 @@ Setup for 330mA per LED.</text>
 </instance>
 <instance part="S1" gate="G$1" x="-69.85" y="72.39" smashed="yes">
 <attribute name="NAME" x="-69.85" y="73.914" size="1.778" layer="95" font="vector" align="bottom-center"/>
+</instance>
+<instance part="R4" gate="G$1" x="-85.09" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="-81.28" y="51.8414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-81.28" y="56.642" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -13687,12 +13692,9 @@ Setup for 330mA per LED.</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<wire x1="-35.56" y1="53.34" x2="-97.79" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="G"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="-97.79" y1="53.34" x2="-99.06" y2="53.34" width="0.1524" layer="91"/>
-<junction x="-97.79" y="53.34"/>
+<wire x1="-35.56" y1="53.34" x2="-80.01" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PA02/AIN0"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -13709,6 +13711,16 @@ Setup for 330mA per LED.</text>
 <wire x1="-35.56" y1="48.26" x2="-74.93" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-74.93" y1="48.26" x2="-74.93" y2="72.39" width="0.1524" layer="91"/>
 <junction x="-74.93" y="72.39"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="-97.79" y1="53.34" x2="-99.06" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-97.79" y="53.34"/>
+<wire x1="-90.17" y1="53.34" x2="-97.79" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
