@@ -196,6 +196,30 @@
 <vertex x="9.31" y="20.396"/>
 <vertex x="9.31" y="15.241"/>
 </polygon>
+<polygon width="0.127" layer="30">
+<vertex x="47.141" y="33.207"/>
+<vertex x="64.496" y="33.207"/>
+<vertex x="64.496" y="26.99"/>
+<vertex x="47.141" y="26.99"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="64.459" y="33.207"/>
+<vertex x="47.104" y="33.207"/>
+<vertex x="47.104" y="26.99"/>
+<vertex x="64.459" y="26.99"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="64.459" y="33.207"/>
+<vertex x="47.104" y="33.207"/>
+<vertex x="47.104" y="26.99"/>
+<vertex x="64.459" y="26.99"/>
+</polygon>
+<polygon width="0.127" layer="42">
+<vertex x="64.459" y="26.993"/>
+<vertex x="47.104" y="26.993"/>
+<vertex x="47.104" y="33.21"/>
+<vertex x="64.459" y="33.21"/>
+</polygon>
 </plain>
 <libraries>
 <library name="timon-diverses" urn="urn:adsk.eagle:library:2314815">
@@ -1544,10 +1568,10 @@ einem neuen Namen ab.</description>
 <signal name="N$2">
 <contactref element="LED-1" pad="C"/>
 <contactref element="LED-2" pad="A"/>
-<wire x1="42.1" y1="30.1" x2="61.203" y2="30.1" width="0.6096" layer="1"/>
-<wire x1="61.203" y1="30.1" x2="63.779" y2="27.524" width="0.6096" layer="1"/>
-<wire x1="63.779" y1="27.524" x2="63.779" y2="23.725" width="0.6096" layer="1"/>
-<wire x1="63.779" y1="23.725" x2="63.78" y2="23.724" width="0.6096" layer="1"/>
+<wire x1="52.404" y1="25.8" x2="46.4" y2="25.8" width="0.6096" layer="1"/>
+<wire x1="42.1" y1="30.1" x2="46.4" y2="25.8" width="0.6096" layer="1"/>
+<wire x1="54.48" y1="23.724" x2="63.78" y2="23.724" width="0.6096" layer="1"/>
+<wire x1="54.48" y1="23.724" x2="52.404" y2="25.8" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="LED-2" pad="C"/>
