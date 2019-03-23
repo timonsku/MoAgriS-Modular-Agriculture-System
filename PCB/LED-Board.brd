@@ -1133,8 +1133,8 @@ einem neuen Namen ab.</description>
 <contactref element="GND-CLIP3" pad="CLIP-INPUT2"/>
 <contactref element="GND-CLIP3" pad="CLIP-INPUT1"/>
 <polygon width="0.1524" layer="16" thermals="no" rank="2">
-<vertex x="41" y="-4"/>
-<vertex x="41" y="35.5"/>
+<vertex x="46" y="-4"/>
+<vertex x="46" y="35.5"/>
 <vertex x="71.5" y="35.5"/>
 <vertex x="71.5" y="-4"/>
 </polygon>
@@ -1218,17 +1218,18 @@ einem neuen Namen ab.</description>
 <wire x1="34.13" y1="5.162" x2="34.227" y2="5.259" width="0.2032" layer="1"/>
 <wire x1="34.227" y1="5.259" x2="35.0906" y2="5.259" width="0.2032" layer="1"/>
 <wire x1="35.0906" y1="5.259" x2="35.37" y2="5.5384" width="0.2032" layer="1"/>
-<wire x1="39.3832" y1="2.3888" x2="43.0408" y2="2.3888" width="0.2032" layer="16"/>
-<wire x1="39.3832" y1="2.3888" x2="39.0784" y2="2.084" width="0.2032" layer="16"/>
-<via x="39.0784" y="2.084" extent="1-16" drill="0.4"/>
+<wire x1="39.2832" y1="4.3888" x2="47.2408" y2="4.3888" width="0.2032" layer="16"/>
+<wire x1="39.2832" y1="4.3888" x2="39.1784" y2="4.284" width="0.2032" layer="16"/>
+<via x="39.1784" y="4.284" extent="1-16" drill="0.4"/>
 <contactref element="C2" pad="-"/>
-<wire x1="35.37" y1="5.5384" x2="35.624" y2="5.5384" width="0.2032" layer="16"/>
-<wire x1="35.624" y1="5.5384" x2="39.0784" y2="2.084" width="0.2032" layer="16"/>
-<via x="45.7" y="12.3" extent="1-16" drill="0.4"/>
-<via x="43.3" y="12.3" extent="1-16" drill="0.4"/>
-<via x="44.5" y="15" extent="1-16" drill="0.4"/>
+<wire x1="35.37" y1="5.5384" x2="37.924" y2="5.5384" width="0.2032" layer="16"/>
+<wire x1="37.924" y1="5.5384" x2="39.1784" y2="4.284" width="0.2032" layer="16"/>
+<via x="46.2" y="12.3" extent="1-16" drill="0.4"/>
+<via x="43" y="12.3" extent="1-16" drill="0.4"/>
+<via x="44.6" y="15.3" extent="1-16" drill="0.4"/>
 <via x="44.5" y="9.2" extent="1-16" drill="0.4"/>
 <contactref element="J2" pad="1"/>
+<wire x1="46.2" y1="12.3" x2="43" y2="12.3" width="0.4064" layer="16"/>
 </signal>
 <signal name="LED-">
 <contactref element="LED-3" pad="C"/>
@@ -1277,8 +1278,8 @@ einem neuen Namen ab.</description>
 <polygon width="0.1524" layer="16" thermals="no">
 <vertex x="-0.532" y="35.34"/>
 <vertex x="-0.532" y="-3.91"/>
-<vertex x="28.518" y="-3.91"/>
-<vertex x="28.518" y="35.34"/>
+<vertex x="27.018" y="-3.91"/>
+<vertex x="27.018" y="35.34"/>
 </polygon>
 <contactref element="LED-3" pad="S"/>
 <wire x1="22.498" y1="17.344" x2="22.498" y2="17.348" width="0.4826" layer="1"/>
@@ -1545,10 +1546,10 @@ einem neuen Namen ab.</description>
 <via x="33.592" y="32.564" extent="1-16" drill="0.4"/>
 <via x="32.576" y="32.564" extent="1-16" drill="0.4"/>
 <polygon width="0.1524" layer="16" thermals="no" rank="3">
-<vertex x="29.127" y="35.5"/>
-<vertex x="29.127" y="-4"/>
-<vertex x="40.373" y="-4"/>
-<vertex x="40.373" y="35.5"/>
+<vertex x="27.627" y="35.5"/>
+<vertex x="27.627" y="-4"/>
+<vertex x="45.373" y="-4"/>
+<vertex x="45.373" y="35.5"/>
 </polygon>
 <polygon width="0.127" layer="1" thermals="no">
 <vertex x="31.941" y="33.707"/>
