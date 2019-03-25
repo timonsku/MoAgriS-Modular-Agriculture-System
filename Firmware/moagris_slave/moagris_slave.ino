@@ -1,11 +1,14 @@
 #include <SDI12.h>
 
+#define FIRMWAREVERSION "00.00.01"
+
 //enable (1) to activate heartbeat
 #define HEARTBEATSAFESTATE 1
 //recommended value is 20000UL and do heartbeat every 15000ms
 #define HEARTBEATINTERVAL 150543560UL
 
 #define SDICMDIDENTIFICATION 'I'
+#define SDICMDVERSION 'V'
 #define SDICMDCHANGEADDR 'C'
 #define SDICMDHEARTBEAT 'H'
 #define SDICMDTEST 'T'
@@ -149,16 +152,16 @@ void loop() {
             case SDICMDIDENTIFICATION: //xored serial number of samd11; blank responseContent                 
               finishOffset=0;
               break;
-            case SDICMDTEST: //test
-              strcpy(uResponse.sdiResponse.responseContent,"abcd");
-              finishOffset=4;
+            case SDICMDVERSION:
+              strcpy(uResponse.sdiResponse.responseContent,FIRMWAREVERSION);
+              finishOffset=sizeof(FIRMWAREVERSION);
               break;
             case SDICMDSTATUSLED: // set status LED to value (char) [S]
               digitalWrite(LED_PIN, ctob(*commandReadPtr));
               strcpy(uResponse.sdiResponse.responseContent,"ACK");
               finishOffset=3;
               break;
-            case SDICMDFAN:  
+            case SDICMDFAN:  // set fan to value (char) 
             case SDICMDPOWERLED: // set powerled to value (char) 
             
               //chars 2..4 are acii coded values between 0..255
