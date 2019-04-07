@@ -61,7 +61,7 @@ There is also a [Accessories /PCB/notes/Accessories.ods](./PCB/notes/Accessories
 All modules are created in [Eagle](https://www.autodesk.com/products/eagle/overview) and are within the 10cm*10cm limit to use the free version.
 
 ### LED-Module 
-Provides light by 3 full spectrum LEDs which intensity can be controlled via SDI.
+Provides light by 3 full spectrum LEDs which intensity can be controlled via SDI. The long version has a better light and heat distribution.
 
 ### Pump-Module 
 Provides water by a pump by switching it on/off via SDI. 
@@ -77,7 +77,7 @@ Provides an ~90° angle for the rods.
 
 ## Future
 More things could be added such as
-- Sensors: Currently a LED-Board is technically capable since all pins are routed outside:
+- Sensors: Currently a LED-Board is technically capable of driving sensors since all pins are routed outside:
 	- Watering could depend on the wetness of the soil
 	- Measure the water level of the pump tank to send an alert to refill
 - Create a node-red configuration
