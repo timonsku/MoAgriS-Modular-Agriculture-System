@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -147,39 +147,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="supply1">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
- GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
- Please keep in mind, that these devices are necessary for the
- automatic wiring of the supply signals.&lt;p&gt;
- The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
- In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="GND">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GND" prefix="GND">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="timon-diverses">
 <packages>
 <package name="FUSE-HOLDER-5X20MM">
@@ -273,25 +240,31 @@ DIN A4, landscape with location and doc. field</description>
 </class>
 </classes>
 <parts>
-<part name="VCC-CLIP" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
-<part name="GND-CLIP" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
-<part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="PWM-CLIP" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
-<part name="VCC-CLIP3" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
-<part name="GND-CLIP3" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="PWM-CLIP1" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="AVCC-CLIP" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="AGND-CLIP" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
+<part name="ABUS-CLIP" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="AVCC-CLIP3" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="AGND-CLIP3" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
+<part name="ABUS-CLIP1" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="VCC-CLIP1" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
-<part name="GND-CLIP1" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="PWM-CLIP2" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
-<part name="VCC-CLIP2" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
-<part name="GND-CLIP2" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="PWM-CLIP3" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="AVCC-CLIP1" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="AGND-CLIP1" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
+<part name="ABUS-CLIP2" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="AVCC-CLIP2" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="AGND-CLIP2" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
+<part name="ABUS-CLIP3" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="BVCC-CLIP2" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="BGND-CLIP" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
+<part name="BBUS-CLIP" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="BVCC-CLIP" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="BGND-CLIP2" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
+<part name="BBUS-CLIP2" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="BVCC-CLIP3" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="BGND-CLIP1" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
+<part name="BBUS-CLIP1" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="BVCC-CLIP1" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
+<part name="BGND-CLIP3" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device="" value="FUSE-HOLDER-5X20MM"/>
+<part name="BBUS-CLIP3" library="timon-diverses" deviceset="FUSE-HOLDER-5X20MM" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -302,121 +275,169 @@ high efficiency LED driver.
 Setup for 330mA per LED.</text>
 </plain>
 <instances>
-<instance part="VCC-CLIP" gate="CLIP" x="-33.02" y="-2.54" smashed="yes"/>
-<instance part="GND-CLIP" gate="CLIP" x="-68.58" y="15.24" smashed="yes"/>
-<instance part="GND10" gate="1" x="-58.42" y="12.7" smashed="yes">
-<attribute name="VALUE" x="-60.96" y="10.16" size="1.778" layer="96"/>
-</instance>
-<instance part="GND11" gate="1" x="-58.42" y="5.08" smashed="yes">
-<attribute name="VALUE" x="-60.96" y="2.54" size="1.778" layer="96"/>
-</instance>
-<instance part="PWM-CLIP" gate="CLIP" x="-60.96" y="-25.4" smashed="yes"/>
-<instance part="VCC-CLIP3" gate="CLIP" x="-33.02" y="7.62" smashed="yes"/>
-<instance part="GND-CLIP3" gate="CLIP" x="-68.58" y="-10.16" smashed="yes"/>
-<instance part="GND6" gate="1" x="-58.42" y="-12.7" smashed="yes">
-<attribute name="VALUE" x="-60.96" y="-15.24" size="1.778" layer="96"/>
-</instance>
-<instance part="PWM-CLIP1" gate="CLIP" x="-30.48" y="-25.4" smashed="yes"/>
+<instance part="AVCC-CLIP" gate="CLIP" x="-83.82" y="25.4" smashed="yes"/>
+<instance part="AGND-CLIP" gate="CLIP" x="-83.82" y="55.88" smashed="yes"/>
+<instance part="ABUS-CLIP" gate="CLIP" x="-83.82" y="15.24" smashed="yes"/>
+<instance part="AVCC-CLIP3" gate="CLIP" x="-83.82" y="35.56" smashed="yes"/>
+<instance part="AGND-CLIP3" gate="CLIP" x="-83.82" y="45.72" smashed="yes"/>
+<instance part="ABUS-CLIP1" gate="CLIP" x="-83.82" y="5.08" smashed="yes"/>
 <instance part="FRAME1" gate="G$1" x="-114.3" y="-81.28" smashed="yes">
 <attribute name="DRAWING_NAME" x="102.87" y="-66.04" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="102.87" y="-71.12" size="2.286" layer="94"/>
 <attribute name="SHEET" x="116.205" y="-76.2" size="2.54" layer="94"/>
 </instance>
-<instance part="VCC-CLIP1" gate="CLIP" x="58.42" y="5.08" smashed="yes"/>
-<instance part="GND-CLIP1" gate="CLIP" x="22.86" y="22.86" smashed="yes"/>
-<instance part="GND1" gate="1" x="33.02" y="20.32" smashed="yes">
-<attribute name="VALUE" x="30.48" y="17.78" size="1.778" layer="96"/>
-</instance>
-<instance part="GND2" gate="1" x="33.02" y="12.7" smashed="yes">
-<attribute name="VALUE" x="30.48" y="10.16" size="1.778" layer="96"/>
-</instance>
-<instance part="PWM-CLIP2" gate="CLIP" x="30.48" y="-17.78" smashed="yes"/>
-<instance part="VCC-CLIP2" gate="CLIP" x="58.42" y="15.24" smashed="yes"/>
-<instance part="GND-CLIP2" gate="CLIP" x="22.86" y="-2.54" smashed="yes"/>
-<instance part="GND3" gate="1" x="33.02" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="30.48" y="-7.62" size="1.778" layer="96"/>
-</instance>
-<instance part="PWM-CLIP3" gate="CLIP" x="60.96" y="-17.78" smashed="yes"/>
+<instance part="AVCC-CLIP1" gate="CLIP" x="-53.34" y="25.4" smashed="yes"/>
+<instance part="AGND-CLIP1" gate="CLIP" x="-53.34" y="55.88" smashed="yes"/>
+<instance part="ABUS-CLIP2" gate="CLIP" x="-53.34" y="15.24" smashed="yes"/>
+<instance part="AVCC-CLIP2" gate="CLIP" x="-53.34" y="35.56" smashed="yes"/>
+<instance part="AGND-CLIP2" gate="CLIP" x="-53.34" y="45.72" smashed="yes"/>
+<instance part="ABUS-CLIP3" gate="CLIP" x="-53.34" y="5.08" smashed="yes"/>
+<instance part="BVCC-CLIP2" gate="CLIP" x="5.08" y="25.4" smashed="yes"/>
+<instance part="BGND-CLIP" gate="CLIP" x="5.08" y="55.88" smashed="yes"/>
+<instance part="BBUS-CLIP" gate="CLIP" x="5.08" y="15.24" smashed="yes"/>
+<instance part="BVCC-CLIP" gate="CLIP" x="5.08" y="35.56" smashed="yes"/>
+<instance part="BGND-CLIP2" gate="CLIP" x="5.08" y="45.72" smashed="yes"/>
+<instance part="BBUS-CLIP2" gate="CLIP" x="5.08" y="5.08" smashed="yes"/>
+<instance part="BVCC-CLIP3" gate="CLIP" x="35.56" y="25.4" smashed="yes"/>
+<instance part="BGND-CLIP1" gate="CLIP" x="35.56" y="55.88" smashed="yes"/>
+<instance part="BBUS-CLIP1" gate="CLIP" x="35.56" y="15.24" smashed="yes"/>
+<instance part="BVCC-CLIP1" gate="CLIP" x="35.56" y="35.56" smashed="yes"/>
+<instance part="BGND-CLIP3" gate="CLIP" x="35.56" y="45.72" smashed="yes"/>
+<instance part="BBUS-CLIP3" gate="CLIP" x="35.56" y="5.08" smashed="yes"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="ABUS" class="0">
 <segment>
-<pinref part="GND-CLIP" gate="CLIP" pin="INPUT"/>
-<pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="ABUS-CLIP" gate="CLIP" pin="INPUT"/>
+<wire x1="-73.66" y1="15.24" x2="-60.96" y2="15.24" width="0.1524" layer="91"/>
+<label x="-76.2" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GND-CLIP3" gate="CLIP" pin="INPUT"/>
-<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="ABUS-CLIP1" gate="CLIP" pin="INPUT"/>
+<wire x1="-73.66" y1="5.08" x2="-60.96" y2="5.08" width="0.1524" layer="91"/>
+<label x="-76.2" y="2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GND-CLIP1" gate="CLIP" pin="INPUT"/>
-<pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="ABUS-CLIP2" gate="CLIP" pin="INPUT"/>
+<wire x1="-43.18" y1="15.24" x2="-30.48" y2="15.24" width="0.1524" layer="91"/>
+<label x="-45.72" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GND-CLIP2" gate="CLIP" pin="INPUT"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="PWM" class="0">
-<segment>
-<pinref part="PWM-CLIP" gate="CLIP" pin="INPUT"/>
-<wire x1="-50.8" y1="-25.4" x2="-45.72" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-48.26" y="-27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="PWM-CLIP1" gate="CLIP" pin="INPUT"/>
-<wire x1="-20.32" y1="-25.4" x2="-15.24" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-17.78" y="-27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="PWM-CLIP2" gate="CLIP" pin="INPUT"/>
-<wire x1="40.64" y1="-17.78" x2="45.72" y2="-17.78" width="0.1524" layer="91"/>
-<label x="43.18" y="-20.32" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="PWM-CLIP3" gate="CLIP" pin="INPUT"/>
-<wire x1="71.12" y1="-17.78" x2="76.2" y2="-17.78" width="0.1524" layer="91"/>
-<label x="73.66" y="-20.32" size="1.778" layer="95"/>
+<pinref part="ABUS-CLIP3" gate="CLIP" pin="INPUT"/>
+<wire x1="-43.18" y1="5.08" x2="-30.48" y2="5.08" width="0.1524" layer="91"/>
+<label x="-45.72" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VCC-RAW" class="1">
+<net name="AVCC-RAW" class="1">
 <segment>
-<wire x1="-22.86" y1="-2.54" x2="-20.32" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-20.32" y="-5.08" size="1.778" layer="95"/>
-<pinref part="VCC-CLIP" gate="CLIP" pin="INPUT"/>
+<wire x1="-73.66" y1="25.4" x2="-60.96" y2="25.4" width="0.1524" layer="91"/>
+<label x="-76.2" y="22.86" size="1.778" layer="95"/>
+<pinref part="AVCC-CLIP" gate="CLIP" pin="INPUT"/>
 </segment>
 <segment>
-<wire x1="-22.86" y1="-10.16" x2="-20.32" y2="-10.16" width="0.1524" layer="91"/>
-<label x="-20.32" y="-12.7" size="1.778" layer="95"/>
+<wire x1="-73.66" y1="35.56" x2="-60.96" y2="35.56" width="0.1524" layer="91"/>
+<label x="-76.2" y="33.02" size="1.778" layer="95"/>
+<pinref part="AVCC-CLIP3" gate="CLIP" pin="INPUT"/>
 </segment>
 <segment>
-<wire x1="-22.86" y1="15.24" x2="-20.32" y2="15.24" width="0.1524" layer="91"/>
-<label x="-20.32" y="12.7" size="1.778" layer="95"/>
+<wire x1="-43.18" y1="25.4" x2="-30.48" y2="25.4" width="0.1524" layer="91"/>
+<label x="-45.72" y="22.86" size="1.778" layer="95"/>
+<pinref part="AVCC-CLIP1" gate="CLIP" pin="INPUT"/>
 </segment>
 <segment>
-<wire x1="-22.86" y1="7.62" x2="-20.32" y2="7.62" width="0.1524" layer="91"/>
-<label x="-20.32" y="5.08" size="1.778" layer="95"/>
-<pinref part="VCC-CLIP3" gate="CLIP" pin="INPUT"/>
+<wire x1="-43.18" y1="35.56" x2="-30.48" y2="35.56" width="0.1524" layer="91"/>
+<label x="-45.72" y="33.02" size="1.778" layer="95"/>
+<pinref part="AVCC-CLIP2" gate="CLIP" pin="INPUT"/>
+</segment>
+</net>
+<net name="AGND" class="0">
+<segment>
+<pinref part="AGND-CLIP" gate="CLIP" pin="INPUT"/>
+<wire x1="-73.66" y1="55.88" x2="-60.96" y2="55.88" width="0.1524" layer="91"/>
+<label x="-76.2" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="68.58" y1="5.08" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
-<label x="71.12" y="2.54" size="1.778" layer="95"/>
-<pinref part="VCC-CLIP1" gate="CLIP" pin="INPUT"/>
+<pinref part="AGND-CLIP3" gate="CLIP" pin="INPUT"/>
+<wire x1="-73.66" y1="45.72" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
+<label x="-76.2" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="68.58" y1="-2.54" x2="71.12" y2="-2.54" width="0.1524" layer="91"/>
-<label x="71.12" y="-5.08" size="1.778" layer="95"/>
+<pinref part="AGND-CLIP1" gate="CLIP" pin="INPUT"/>
+<wire x1="-43.18" y1="55.88" x2="-30.48" y2="55.88" width="0.1524" layer="91"/>
+<label x="-45.72" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="68.58" y1="22.86" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
-<label x="71.12" y="20.32" size="1.778" layer="95"/>
+<pinref part="AGND-CLIP2" gate="CLIP" pin="INPUT"/>
+<wire x1="-43.18" y1="45.72" x2="-30.48" y2="45.72" width="0.1524" layer="91"/>
+<label x="-45.72" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BGND" class="0">
+<segment>
+<pinref part="BGND-CLIP" gate="CLIP" pin="INPUT"/>
+<wire x1="15.24" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
+<label x="12.7" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="68.58" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
-<label x="71.12" y="12.7" size="1.778" layer="95"/>
-<pinref part="VCC-CLIP2" gate="CLIP" pin="INPUT"/>
+<pinref part="BGND-CLIP2" gate="CLIP" pin="INPUT"/>
+<wire x1="15.24" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<label x="12.7" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BGND-CLIP1" gate="CLIP" pin="INPUT"/>
+<wire x1="45.72" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<label x="43.18" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BGND-CLIP3" gate="CLIP" pin="INPUT"/>
+<wire x1="45.72" y1="45.72" x2="58.42" y2="45.72" width="0.1524" layer="91"/>
+<label x="43.18" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BVCC-RAW" class="1">
+<segment>
+<wire x1="15.24" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
+<label x="12.7" y="33.02" size="1.778" layer="95"/>
+<pinref part="BVCC-CLIP" gate="CLIP" pin="INPUT"/>
+</segment>
+<segment>
+<wire x1="15.24" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
+<label x="12.7" y="22.86" size="1.778" layer="95"/>
+<pinref part="BVCC-CLIP2" gate="CLIP" pin="INPUT"/>
+</segment>
+<segment>
+<wire x1="45.72" y1="35.56" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
+<label x="43.18" y="33.02" size="1.778" layer="95"/>
+<pinref part="BVCC-CLIP1" gate="CLIP" pin="INPUT"/>
+</segment>
+<segment>
+<wire x1="45.72" y1="25.4" x2="58.42" y2="25.4" width="0.1524" layer="91"/>
+<label x="43.18" y="22.86" size="1.778" layer="95"/>
+<pinref part="BVCC-CLIP3" gate="CLIP" pin="INPUT"/>
+</segment>
+</net>
+<net name="BBUS" class="0">
+<segment>
+<pinref part="BBUS-CLIP" gate="CLIP" pin="INPUT"/>
+<wire x1="15.24" y1="15.24" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
+<label x="12.7" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BBUS-CLIP2" gate="CLIP" pin="INPUT"/>
+<wire x1="15.24" y1="5.08" x2="27.94" y2="5.08" width="0.1524" layer="91"/>
+<label x="12.7" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BBUS-CLIP1" gate="CLIP" pin="INPUT"/>
+<wire x1="45.72" y1="15.24" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
+<label x="43.18" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BBUS-CLIP3" gate="CLIP" pin="INPUT"/>
+<wire x1="45.72" y1="5.08" x2="58.42" y2="5.08" width="0.1524" layer="91"/>
+<label x="43.18" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
